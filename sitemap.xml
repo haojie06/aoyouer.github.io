@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://notesail.com/posts/hello-hexo.html</loc>
+    
+    <lastmod>2020-05-07T09:43:58.946Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://notesail.com/posts/hexo-multi-sites.html</loc>
     
     <lastmod>2020-05-07T09:14:26.167Z</lastmod>
@@ -9,14 +16,14 @@
   </url>
   
   <url>
-    <loc>https://notesail.com/tags/index.html</loc>
+    <loc>https://notesail.com/search/index.html</loc>
     
     <lastmod>2020-05-07T04:02:01.957Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://notesail.com/search/index.html</loc>
+    <loc>https://notesail.com/tags/index.html</loc>
     
     <lastmod>2020-05-07T04:02:01.957Z</lastmod>
     
@@ -65,13 +72,6 @@
   </url>
   
   <url>
-    <loc>https://notesail.com/posts/linux-manage-windows.html</loc>
-    
-    <lastmod>2020-05-07T04:02:01.865Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://notesail.com/messages/index.html</loc>
     
     <lastmod>2020-05-07T04:02:01.865Z</lastmod>
@@ -80,6 +80,13 @@
   
   <url>
     <loc>https://notesail.com/baidu_verify_bJ6YghFiX0.html</loc>
+    
+    <lastmod>2020-05-07T04:02:01.865Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://notesail.com/posts/linux-manage-windows.html</loc>
     
     <lastmod>2020-05-07T04:02:01.865Z</lastmod>
     
@@ -222,13 +229,6 @@
     <loc>https://notesail.com/posts/study-nodejs.html</loc>
     
     <lastmod>2020-05-07T04:02:01.533Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://notesail.com/posts/hello-hexo.html</loc>
-    
-    <lastmod>2020-05-07T04:02:01.521Z</lastmod>
     
   </url>
   

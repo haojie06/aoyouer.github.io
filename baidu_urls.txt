@@ -1,5 +1,4 @@
 https://notesail.com/posts/hexo-multi-sites.html
-https://notesail.com/posts/hello-hexo.html
 https://notesail.com/posts/valine-admin.html
 https://notesail.com/posts/cloudflare-realip.html
 https://notesail.com/posts/linux-manage-windows.html
@@ -14,6 +13,7 @@ https://notesail.com/posts/android-metasploit.html
 https://notesail.com/posts/bdl-plugins-guide.html
 https://notesail.com/posts/bds-packs-add.html
 https://notesail.com/posts/docker-chinese-support.html
+https://notesail.com/posts/hello-hexo.html
 https://notesail.com/posts/babylon-glb.html
 https://notesail.com/posts/wechatapp-npm.html
 https://notesail.com/posts/wordpress-custom-font.html
