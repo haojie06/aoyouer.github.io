@@ -1,3 +1,4 @@
+https://notesail.com/posts/hexo-multi-sites.html
 https://notesail.com/posts/hello-hexo.html
 https://notesail.com/posts/valine-admin.html
 https://notesail.com/posts/cloudflare-realip.html
