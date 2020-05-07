@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>帆笔记</title>
+  
+  <subtitle>轻帆远航</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://notesail.com/"/>
+  <updated>2020-05-07T04:02:01.521Z</updated>
+  <id>https://notesail.com/</id>
+  
+  <author>
+    <name>haojie06</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello Hexo</title>
+    <link href="https://notesail.com/posts/hello-hexo.html"/>
+    <id>https://notesail.com/posts/hello-hexo.html</id>
+    <published>2020-05-07T04:02:01.509Z</published>
+    <updated>2020-05-07T04:02:01.521Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hexo使用valine评论并支持邮件通知</title>
+    <link href="https://notesail.com/posts/valine-admin.html"/>
+    <id>https://notesail.com/posts/valine-admin.html</id>
+    <published>2020-04-16T12:01:56.000Z</published>
+    <updated>2020-05-07T04:02:01.733Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;使用valine评论并启用邮件通知&quot;&gt;&lt;a href=&quot;#使用valine评论并启用邮件通知&quot; class=&quot;headerlink&quot; title=&quot;使用valine评论并启用邮件通知&quot;&gt;&lt;/a&gt;使用valine评论并启用邮件通知&lt;/h2&gt;&lt;p&gt;使用hexo来生成静态页面做博客有很多好处，其中一个非常大的好处就是不需要使用自己的服务器&lt;del&gt;省了一大笔钱&lt;/del&gt;。但是正是因为是静态网页也有一些不足的地方，例如评论。hexo的评论只能使用第三方的服务，如gitalk使用了github issues来储存评论，而valine使用了leancloud来部署一个后端并储存评论。之前一直使用的是gitalk，但是不是每个人都有github账号，而本主题的作者removeif正好这些天为主题添加了valine的最新评论支持。为了更加方便大家评论，我也决定尝试一下使用valine作为评论插件。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="杂谈" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/"/>
+    
+      <category term="分享" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="建站" scheme="https://notesail.com/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+      <category term="博客" scheme="https://notesail.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>nginx访问日志记录cloudflare后真实ip</title>
+    <link href="https://notesail.com/posts/cloudflare-realip.html"/>
+    <id>https://notesail.com/posts/cloudflare-realip.html</id>
+    <published>2020-04-11T16:11:37.000Z</published>
+    <updated>2020-05-07T04:02:01.809Z</updated>
+    
+    <summary type="html">
+    
+      本文介绍了开启CDN后nginx如何获取访客的真实ip。
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="实践" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
+    
+    
+      <category term="建站" scheme="https://notesail.com/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+      <category term="nginx" scheme="https://notesail.com/tags/nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux下管理Windows</title>
+    <link href="https://notesail.com/posts/linux-manage-windows.html"/>
+    <id>https://notesail.com/posts/linux-manage-windows.html</id>
+    <published>2020-04-07T03:55:50.000Z</published>
+    <updated>2020-05-07T04:02:01.865Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Linux下进行Windows管理的一些想法&quot;&gt;&lt;a href=&quot;#Linux下进行Windows管理的一些想法&quot; class=&quot;headerlink&quot; title=&quot;Linux下进行Windows管理的一些想法&quot;&gt;&lt;/a&gt;Linux下进行Windows管理的一些想法&lt;/h2&gt;&lt;p&gt;之前提到了为了运行某服务，我在linux服务器下使用kvm虚拟化了一个windows server出来，但是由于我之前写好的用来管理该服务的QQ机器人只能运行在linux下，又懒得去修改了，而且平时使用命令行要比远程桌面效率更高一些，所以我采取了以下几点措施来实现在linux下进行windows管理。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;windows安装openssh服务，linux通过ssh控制windows&lt;/li&gt;
+&lt;li&gt;windows分享文件夹，linux直接通过网络挂载该文件夹&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="杂谈" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/"/>
+    
+      <category term="折腾" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/%E6%8A%98%E8%85%BE/"/>
+    
+    
+      <category term="windows" scheme="https://notesail.com/tags/windows/"/>
+    
+      <category term="虚拟机" scheme="https://notesail.com/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>kvm单网卡桥接模式</title>
+    <link href="https://notesail.com/posts/kvm-bridge.html"/>
+    <id>https://notesail.com/posts/kvm-bridge.html</id>
+    <published>2020-04-07T02:45:33.000Z</published>
+    <updated>2020-05-07T04:02:01.845Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Ubuntu18-kvm单网卡桥接&quot;&gt;&lt;a href=&quot;#Ubuntu18-kvm单网卡桥接&quot; class=&quot;headerlink&quot; title=&quot;Ubuntu18 kvm单网卡桥接&quot;&gt;&lt;/a&gt;Ubuntu18 kvm单网卡桥接&lt;/h2&gt;&lt;p&gt;家里有一台nuc8作为服务器使用，平时都是使用ubuntu18，但是由于某项服务在linux下运行出现异常，而经过朋友的测试，在windows下可以正常运行，于是我考虑使用kvm在Linux上虚拟化一个windows server来使用。安装相关程序的教程网上有很多也比较简单，这里就不赘述了，但是在装好程序之后，我试了很多种方法才最终配置好了虚拟机的桥接，所以写下这篇文章记录一下。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="杂谈" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/"/>
+    
+      <category term="折腾" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/%E6%8A%98%E8%85%BE/"/>
+    
+    
+      <category term="虚拟机" scheme="https://notesail.com/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    
+      <category term="kvm" scheme="https://notesail.com/tags/kvm/"/>
+    
+      <category term="网络" scheme="https://notesail.com/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在Linux上运行bdx(BedrockX)开设基岩版MC插件服</title>
+    <link href="https://notesail.com/posts/linux-bedrockx.html"/>
+    <id>https://notesail.com/posts/linux-bedrockx.html</id>
+    <published>2020-04-04T10:18:15.000Z</published>
+    <updated>2020-05-07T04:02:01.833Z</updated>
+    
+    <summary type="html">
+    
+      本文介绍了如何在Linux上安装wine5.0并使用bedrockx(bdx)开设支持插件的Minecraft 基岩版服务器。
+    
+    </summary>
+    
+    
+      <category term="杂谈" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/"/>
+    
+      <category term="分享" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="Minecraft" scheme="https://notesail.com/tags/Minecraft/"/>
+    
+      <category term="Minecraft服务器" scheme="https://notesail.com/tags/Minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用Chevereto自建图床</title>
+    <link href="https://notesail.com/posts/chevereto-imgbed.html"/>
+    <id>https://notesail.com/posts/chevereto-imgbed.html</id>
+    <published>2020-03-19T06:48:33.000Z</published>
+    <updated>2020-05-07T04:02:01.621Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Chevereto自建图床&quot;&gt;&lt;a href=&quot;#Chevereto自建图床&quot; class=&quot;headerlink&quot; title=&quot;Chevereto自建图床&quot;&gt;&lt;/a&gt;Chevereto自建图床&lt;/h2&gt;&lt;p&gt;免费的图床用过很多，但是用免费的公共图床有一个巨大的风险，万一那天图床跑路了或者倒闭了，你的图就全部”裂开了”，而且你也大概率找不到以前写一篇文章的时候到底都用了哪些图片…之前这个博客里很多图片用的阿里云oss作为图床，阿里云的速度的确快，并且数据也要安全得多，但是如果访问量较大(当然我的网站都远远达不到那个程度)流量费用也会用掉不少钱，所以为了图片不”裂开”&lt;del&gt;其实也是为了折腾着玩&lt;/del&gt;，我用我的一台国外服务器使用chevereto搭建了一个图床自用。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="杂谈" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/"/>
+    
+      <category term="分享" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="建站" scheme="https://notesail.com/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ubuntu手动安装lnmp+Typecho</title>
+    <link href="https://notesail.com/posts/setup-typecho.html"/>
+    <id>https://notesail.com/posts/setup-typecho.html</id>
+    <published>2020-03-19T03:19:03.000Z</published>
+    <updated>2020-05-07T04:02:01.741Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;手动安装配置lnmp-typecho&quot;&gt;&lt;a href=&quot;#手动安装配置lnmp-typecho&quot; class=&quot;headerlink&quot; title=&quot;手动安装配置lnmp+typecho&quot;&gt;&lt;/a&gt;手动安装配置lnmp+typecho&lt;/h3&gt;&lt;p&gt;这两天寻思着弄一个动态网站作为个人日常的博客，又不太想用wordpress这过于”重量级”的cms，想起了以前也用过的typecho，但是安装过程中遇见了一些困难，发现现在网上极其缺少手动安装typecho的教程，不是过时的教程就是宝塔一键脚本一起上…所以我还是分享一下我是如何安装typecho的吧。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="杂谈" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/"/>
+    
+      <category term="分享" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="建站" scheme="https://notesail.com/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+      <category term="typecho" scheme="https://notesail.com/tags/typecho/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>cloudflare自定义节点 加速访问</title>
+    <link href="https://notesail.com/posts/cloudflare-custom.html"/>
+    <id>https://notesail.com/posts/cloudflare-custom.html</id>
+    <published>2020-03-16T07:07:30.000Z</published>
+    <updated>2020-05-07T04:02:01.797Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;cloudflare自选节点-加速访问&quot;&gt;&lt;a href=&quot;#cloudflare自选节点-加速访问&quot; class=&quot;headerlink&quot; title=&quot;cloudflare自选节点 加速访问&quot;&gt;&lt;/a&gt;cloudflare自选节点 加速访问&lt;/h2&gt;&lt;p&gt;之前的文章提到了，我使用了github page + coding page双部署的方法来存放我的博客，并配合dnspod智能解析，让国内用户直接访问coding page，境外直接访问github page，一方面是为了加速境内的访问，另一方面也是为了让百度蜘蛛能够顺利爬取博客的内容(因为github page是禁止了百度蜘蛛的访问的)。但是部署几天后，有人向我反馈了中国移动打开我的网站缓慢，甚至根本打不开，我一开始还以为他们解析到了github page所以访问慢，没想到一看记录，他们无法访问的ip是腾讯云新加坡的coding page…看来移动真的是令人头疼，今天我尝试使用了cloudflare并自定义节点，让移动直接访问cloudflare的香港节点，令人惊喜的是，改用cloudflare香港节点后，移动的访问速度有了挺大的提升。关于自选节点，其实网上已经有了很多教程了，不过感觉很多都比较杂乱，所以干脆写一个简洁明了一些的出来。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="杂谈" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/"/>
+    
+      <category term="分享" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="建站" scheme="https://notesail.com/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+      <category term="分享" scheme="https://notesail.com/tags/%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="cdn" scheme="https://notesail.com/tags/cdn/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo部署到coding page以及zeit.co</title>
+    <link href="https://notesail.com/posts/hexo-deploy-pages.html"/>
+    <id>https://notesail.com/posts/hexo-deploy-pages.html</id>
+    <published>2020-03-13T05:47:17.000Z</published>
+    <updated>2020-05-07T04:02:01.721Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;github-page-coding-zeit对比&quot;&gt;&lt;a href=&quot;#github-page-coding-zeit对比&quot; class=&quot;headerlink&quot; title=&quot;github page coding zeit对比&quot;&gt;&lt;/a&gt;github page coding zeit对比&lt;/h2&gt;&lt;div class=&quot;tocStart&quot;&gt;&lt;/div&gt;
+
+&lt;!-- toc --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#把hexo生成的文件发布到coding&quot;&gt;把hexo生成的文件发布到coding&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#部署静态网站&quot;&gt;部署静态网站&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#配置自定义域名&quot;&gt;配置自定义域名&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#智能解析github-page-和-coding-page双部署需要设置&quot;&gt;智能解析(github page 和 coding page双部署需要设置)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#效果测试&quot;&gt;效果测试&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#总结&quot;&gt;总结&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- tocstop --&gt;
+
+&lt;div class=&quot;tocEnd&quot;&gt;&lt;/div&gt;
+之前把wordpress上的文章都迁移到了github page上，改为使用hexo生成的静态网站，但是发现百度爬虫无法爬取github page上的资源，所以考虑用coding做一个镜像站，采用双部署的方法来发布网站。
+    
+    </summary>
+    
+    
+      <category term="杂谈" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/"/>
+    
+      <category term="分享" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="建站" scheme="https://notesail.com/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+      <category term="hexo" scheme="https://notesail.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>code-server打造web代码编辑环境</title>
+    <link href="https://notesail.com/posts/code-server.html"/>
+    <id>https://notesail.com/posts/code-server.html</id>
+    <published>2020-03-12T05:53:03.000Z</published>
+    <updated>2020-05-07T04:02:01.753Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;随时随地-coding&quot;&gt;&lt;a href=&quot;#随时随地-coding&quot; class=&quot;headerlink&quot; title=&quot;随时随地 coding&quot;&gt;&lt;/a&gt;随时随地 coding&lt;/h2&gt;&lt;p&gt;近日，微软推出了&lt;strong&gt;visual studio online&lt;/strong&gt;，相当于一个web-ide,与remote deployment开发方式不同的是web-ide的前端与后端都位于服务器上，相当于只要用浏览器打开就能编写代码了，不需要再下载vscode，也不需要配置环境（当然环境要在服务器上配置好）。
+    
+    </summary>
+    
+    
+      <category term="杂谈" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/"/>
+    
+      <category term="折腾" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/%E6%8A%98%E8%85%BE/"/>
+    
+    
+      <category term="折腾" scheme="https://notesail.com/tags/%E6%8A%98%E8%85%BE/"/>
+    
+      <category term="docker" scheme="https://notesail.com/tags/docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安卓使用metasploit</title>
+    <link href="https://notesail.com/posts/android-metasploit.html"/>
+    <id>https://notesail.com/posts/android-metasploit.html</id>
+    <published>2020-03-12T05:45:08.000Z</published>
+    <updated>2020-05-07T04:02:01.777Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;安卓使用metasploit-framework&quot;&gt;&lt;a href=&quot;#安卓使用metasploit-framework&quot; class=&quot;headerlink&quot; title=&quot;安卓使用metasploit-framework&quot;&gt;&lt;/a&gt;安卓使用metasploit-framework&lt;/h1&gt;&lt;p&gt;昨天碰到了一个服务器面板，管理员账户名已知，闲的没事干便想着猜测一下密码是什么，没想到居然是 “123456” 这样的极弱密码，猜了两次就猜出来了，一次成功之后手又有点痒了，不如在手机上装上nmap, metasploit-framework等工具，无聊的时候可以学习一下”网络安全”知识。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="杂谈" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/"/>
+    
+      <category term="折腾" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/%E6%8A%98%E8%85%BE/"/>
+    
+    
+      <category term="折腾" scheme="https://notesail.com/tags/%E6%8A%98%E8%85%BE/"/>
+    
+      <category term="metasploit" scheme="https://notesail.com/tags/metasploit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何使用bdl插件</title>
+    <link href="https://notesail.com/posts/bdl-plugins-guide.html"/>
+    <id>https://notesail.com/posts/bdl-plugins-guide.html</id>
+    <published>2020-03-12T04:53:14.000Z</published>
+    <updated>2020-05-07T04:02:01.697Z</updated>
+    
+    <summary type="html">
+    
+      使用bdlauncher可以使得Minecraft基岩版服务端支持插件，这篇文章写了应该如何使用bdlauncher自带的插件
+    
+    </summary>
+    
+    
+      <category term="杂谈" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/"/>
+    
+      <category term="分享" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="Minecraft" scheme="https://notesail.com/tags/Minecraft/"/>
+    
+      <category term="Minecraft服务器" scheme="https://notesail.com/tags/Minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Minecraft基岩版服务器(bds)怎么添加行为包材质包</title>
+    <link href="https://notesail.com/posts/bds-packs-add.html"/>
+    <id>https://notesail.com/posts/bds-packs-add.html</id>
+    <published>2020-03-12T04:50:28.000Z</published>
+    <updated>2020-05-07T04:02:01.677Z</updated>
+    
+    <summary type="html">
+    
+      Minecraft基岩版服务端如何添加材质包行为包
+    
+    </summary>
+    
+    
+      <category term="杂谈" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/"/>
+    
+      <category term="折腾" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/%E6%8A%98%E8%85%BE/"/>
+    
+    
+      <category term="Minecraft" scheme="https://notesail.com/tags/Minecraft/"/>
+    
+      <category term="Minecraft服务器" scheme="https://notesail.com/tags/Minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>docker图片中文显示乱码/显示方块解决方法</title>
+    <link href="https://notesail.com/posts/docker-chinese-support.html"/>
+    <id>https://notesail.com/posts/docker-chinese-support.html</id>
+    <published>2020-03-12T04:27:29.000Z</published>
+    <updated>2020-05-07T04:02:01.653Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;docker-smokeping中文无法正常显示&quot;&gt;&lt;a href=&quot;#docker-smokeping中文无法正常显示&quot; class=&quot;headerlink&quot; title=&quot;docker smokeping中文无法正常显示&quot;&gt;&lt;/a&gt;docker smokeping中文无法正常显示&lt;/h2&gt;&lt;p&gt;在通过docker配置好了smokeping之后，我遇到了一个问题，当涉及到需要docker中的程序生成图片并提供访问的时候，图片中的中文都无法正常显示，而是显示成了一个个方块，今天查阅了相关资料，解决了这个问题。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="实践" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
+    
+    
+      <category term="docker" scheme="https://notesail.com/tags/docker/"/>
+    
+      <category term="bugs" scheme="https://notesail.com/tags/bugs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用Babylon.js在网页上显示glb模型</title>
+    <link href="https://notesail.com/posts/babylon-glb.html"/>
+    <id>https://notesail.com/posts/babylon-glb.html</id>
+    <published>2020-03-12T04:22:38.000Z</published>
+    <updated>2020-05-07T04:02:01.633Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;使用Babylon-js在网页上显示glb模型&quot;&gt;&lt;a href=&quot;#使用Babylon-js在网页上显示glb模型&quot; class=&quot;headerlink&quot; title=&quot;使用Babylon.js在网页上显示glb模型&quot;&gt;&lt;/a&gt;使用Babylon.js在网页上显示glb模型&lt;/h1&gt;&lt;p&gt;Minecraft的结构方块可以导出格式为 &lt;strong&gt;.glb&lt;/strong&gt; 的模型文件，今天突发奇想，“能不能把这些模型放到网页上展示呢?”经过一番搜索，最终使用 &lt;strong&gt;Babylon.js Viewer&lt;/strong&gt; 实现了这个功能。&lt;/p&gt;
+&lt;h2 id=&quot;模型文件&quot;&gt;&lt;a href=&quot;#模型文件&quot; class=&quot;headerlink&quot; title=&quot;模型文件&quot;&gt;&lt;/a&gt;模型文件&lt;/h2&gt;&lt;p&gt;关于各种模型文件格式的介绍可以查看下面两个网页:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.bgteach.com/article/132&quot;&gt;三维文件格式知多少 | abc、glTF、fbx、obj、dae、stl、3ds…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://yivian.com/news/51717.html&quot;&gt;什么是3D模型，什么是GLTF，又如何使用GLTF文件&lt;/a&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="实践" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
+    
+    
+      <category term="javascript" scheme="https://notesail.com/tags/javascript/"/>
+    
+      <category term="前端" scheme="https://notesail.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微信小程序使用npm模块</title>
+    <link href="https://notesail.com/posts/wechatapp-npm.html"/>
+    <id>https://notesail.com/posts/wechatapp-npm.html</id>
+    <published>2020-03-12T04:20:26.000Z</published>
+    <updated>2020-05-07T04:02:01.597Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;小程序使用npm模块以及GB2312解码&quot;&gt;&lt;a href=&quot;#小程序使用npm模块以及GB2312解码&quot; class=&quot;headerlink&quot; title=&quot;小程序使用npm模块以及GB2312解码&quot;&gt;&lt;/a&gt;小程序使用npm模块以及GB2312解码&lt;/h1&gt;&lt;h2 id=&quot;使用npm模块&quot;&gt;&lt;a href=&quot;#使用npm模块&quot; class=&quot;headerlink&quot; title=&quot;使用npm模块&quot;&gt;&lt;/a&gt;使用npm模块&lt;/h2&gt;&lt;p&gt;今天的一个项目中，小程序从服务器得到的数据是16进制数据包，形似&lt;code&gt;CE C2 B6 C8 3A 32 37 20 43 2C CA AA B6 C8 3A 34 38 20 25 20 0D 0A&lt;/code&gt;,研究后发现这个数据包使用的是&lt;strong&gt;GB2312&lt;/strong&gt;的编码，而javascript是没办法直接解码GB2312的，于是我们需要使用npm导入第三方包了，期间遇到了一些坑。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="实践" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
+    
+    
+      <category term="编程" scheme="https://notesail.com/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="微信小程序" scheme="https://notesail.com/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+      <category term="nodejs" scheme="https://notesail.com/tags/nodejs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>wordpress使用自定义字体</title>
+    <link href="https://notesail.com/posts/wordpress-custom-font.html"/>
+    <id>https://notesail.com/posts/wordpress-custom-font.html</id>
+    <published>2020-03-12T04:14:59.000Z</published>
+    <updated>2020-05-07T04:02:01.577Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;使用本地自定义字体&quot;&gt;&lt;a href=&quot;#使用本地自定义字体&quot; class=&quot;headerlink&quot; title=&quot;使用本地自定义字体&quot;&gt;&lt;/a&gt;使用本地自定义字体&lt;/h1&gt;&lt;p&gt;在wordpress上如果我们不满足于原版的字体我们可以引入更多的字体，这篇文章记录了我是如何为网站标题加上自定义字体的。&lt;/p&gt;
+&lt;h2 id=&quot;获得字体包&quot;&gt;&lt;a href=&quot;#获得字体包&quot; class=&quot;headerlink&quot; title=&quot;获得字体包&quot;&gt;&lt;/a&gt;获得字体包&lt;/h2&gt;&lt;p&gt;提供字体的网站有很多，我的网站标题字体来自&lt;a href=&quot;http://www.foundertype.com&quot;&gt;方正字库&lt;/a&gt;的&lt;a href=&quot;http://www.foundertype.com/index.php/FontInfo/index/id/4594.html?utm_source=zhaozicn&quot;&gt;郑明瑾秀丽笔行书&lt;/a&gt;,下载字体时注意区分好字体的&lt;strong&gt;授权种类&lt;/strong&gt;，比如我使用的字体授权为免费非商用，乱用字体小心律师函😋。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="杂谈" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/"/>
+    
+      <category term="折腾" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/%E6%8A%98%E8%85%BE/"/>
+    
+    
+      <category term="wordpress" scheme="https://notesail.com/tags/wordpress/"/>
+    
+      <category term="技巧" scheme="https://notesail.com/tags/%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Minecraft Websocket 服务器</title>
+    <link href="https://notesail.com/posts/minecraft-websocket.html"/>
+    <id>https://notesail.com/posts/minecraft-websocket.html</id>
+    <published>2020-03-12T04:03:51.000Z</published>
+    <updated>2020-05-07T04:02:01.565Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1&gt;Minecraft websocket 服务器&lt;/h1&gt;
+&lt;p&gt;
+这两天学习了nodejs，于是想着做点什么来实践一下，正好对Minecraft 基岩版的websocket功能比较感兴趣，于是做了一个websocket服务器的demo，可以用来获得游戏内的信息以及执行命令。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="实践" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
+    
+    
+      <category term="Minecraft" scheme="https://notesail.com/tags/Minecraft/"/>
+    
+      <category term="编程" scheme="https://notesail.com/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="nodejs" scheme="https://notesail.com/tags/nodejs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>macvlan模式容器与宿主机通信</title>
+    <link href="https://notesail.com/posts/macvlan-host.html"/>
+    <id>https://notesail.com/posts/macvlan-host.html</id>
+    <published>2020-03-11T01:56:51.000Z</published>
+    <updated>2020-05-07T04:02:01.541Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;如何让macvlan模式的容器与宿主机通信&quot;&gt;&lt;a href=&quot;#如何让macvlan模式的容器与宿主机通信&quot; class=&quot;headerlink&quot; title=&quot;如何让macvlan模式的容器与宿主机通信&quot;&gt;&lt;/a&gt;如何让macvlan模式的容器与宿主机通信&lt;/h2&gt;&lt;p&gt;前段时间使用到了docker的macvlan模式，这个模式通俗一点讲就是在一张物理网卡上虚拟出两个虚拟网卡，具有不同的MAC地址，可以让宿主机和docker同时接入网络并且使用不同的ip，此时docker可以直接和同一网络下的其他设备直接通信，相当的方便，但是这种模式有一个问题，宿主机和容器是没办法直接进行网络通信的，如宿主机ping容器的ip，尽管他们属于同一网段，但是也是ping不通的
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="实践" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
+    
+    
+      <category term="docker" scheme="https://notesail.com/tags/docker/"/>
+    
+      <category term="docker网络" scheme="https://notesail.com/tags/docker%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>nodejs学习记录</title>
+    <link href="https://notesail.com/posts/study-nodejs.html"/>
+    <id>https://notesail.com/posts/study-nodejs.html</id>
+    <published>2020-03-10T14:37:10.000Z</published>
+    <updated>2020-05-07T04:02:01.533Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;node学习实践&quot;&gt;&lt;a href=&quot;#node学习实践&quot; class=&quot;headerlink&quot; title=&quot;node学习实践&quot;&gt;&lt;/a&gt;node学习实践&lt;/h1&gt;&lt;h2 id=&quot;npm&quot;&gt;&lt;a href=&quot;#npm&quot; class=&quot;headerlink&quot; title=&quot;npm&quot;&gt;&lt;/a&gt;npm&lt;/h2&gt;&lt;p&gt;npm是node的包管理工具，我们可以使用npm来安装依赖，也可以将自己编写好的程序上传到npm库中供他人使用。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参考链接 &lt;a href=&quot;https://www.runoob.com/nodejs/nodejs-npm.html&quot;&gt;https://www.runoob.com/nodejs/nodejs-npm.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;安装模块&quot;&gt;&lt;a href=&quot;#安装模块&quot; class=&quot;headerlink&quot; title=&quot;安装模块&quot;&gt;&lt;/a&gt;安装模块&lt;/h3&gt;&lt;p&gt;我们可以使用&lt;code&gt;npm install&lt;/code&gt;来安装npm模块，此时安装路径为当前目录下的&lt;strong&gt;node_modules&lt;/strong&gt;文件夹,如果带上了-g参数，将进行全局安装，安装到 /usr/local 或 node 的安装目录，此时在其它的项目中也可以使用该模块。&lt;/p&gt;
+&lt;h3 id=&quot;创建模块&quot;&gt;&lt;a href=&quot;#创建模块&quot; class=&quot;headerlink&quot; title=&quot;创建模块&quot;&gt;&lt;/a&gt;创建模块&lt;/h3&gt;&lt;h3 id=&quot;其他命令&quot;&gt;&lt;a href=&quot;#其他命令&quot; class=&quot;headerlink&quot; title=&quot;其他命令&quot;&gt;&lt;/a&gt;其他命令&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;使用&lt;code&gt;npm uninstall&lt;/code&gt;来卸载模块&lt;/li&gt;
+&lt;li&gt;使用&lt;code&gt;npm update&lt;/code&gt;更新模块&lt;/li&gt;
+&lt;li&gt;使用&lt;code&gt;npm search&lt;/code&gt;搜索模块
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="学习" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="nodejs" scheme="https://notesail.com/tags/nodejs/"/>
+    
+      <category term="编程学习" scheme="https://notesail.com/tags/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+</feed>

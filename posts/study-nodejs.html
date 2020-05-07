@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.0"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><meta name="keywords" content="[object Object]"><meta name="description" content="node学习实践npmnpm是node的包管理工具，我们可以使用npm来安装依赖，也可以将自己编写好的程序上传到npm库中供他人使用。
+
+参考链接 https://www.runoob.com/nodejs/nodejs-npm.html
+
+安装模块我们可以使用npm install来安装npm模块，此时安装路径为当前目录下的node_modules文件夹,如果带上了-g参数，将进行全局安装，安装到 /usr/local 或 node 的安装目录，此时在其它的项目中也可以使用该模块。
+创建模块其他命令
+使用npm uninstall来卸载模块
+使用npm update更新模块
+使用npm search搜索模块"><meta name="author" content="sailor"><title>nodejs学习记录 - 帆笔记</title><script data-ad-client="ca-pub-6914153309632048" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><meta description="node学习实践npmnpm是node的包管理工具，我们可以使用npm来安装依赖，也可以将自己编写好的程序上传到npm库中供他人使用。  参考链接 https:&amp;#x2F;&amp;#x2F;www.runoob.com&amp;#x2F;nodejs&amp;#x2F;nodejs-npm.html  安装模块我们可以使用npm install来安装npm模块，此时安装路径为当前目录下的node_modules文件夹,如果带上了-g参数，将进行全局安装，安装"><meta property="og:type" content="article"><meta property="og:title" content="nodejs学习记录"><meta property="og:url" content="https://notesail.com/posts/study-nodejs.html"><meta property="og:site_name" content="帆笔记"><meta property="og:description" content="node学习实践npmnpm是node的包管理工具，我们可以使用npm来安装依赖，也可以将自己编写好的程序上传到npm库中供他人使用。  参考链接 https:&amp;#x2F;&amp;#x2F;www.runoob.com&amp;#x2F;nodejs&amp;#x2F;nodejs-npm.html  安装模块我们可以使用npm install来安装npm模块，此时安装路径为当前目录下的node_modules文件夹,如果带上了-g参数，将进行全局安装，安装"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/haojie06/imgStorage/imgs/2020/03/1038.png"><meta property="article:published_time" content="2020-03-10T14:37:10.000Z"><meta property="article:modified_time" content="2020-05-07T04:02:01.533Z"><meta property="article:author" content="sailor"><meta property="article:tag" content="nodejs"><meta property="article:tag" content="编程学习"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="https://cdn.jsdelivr.net/gh/haojie06/imgStorage/imgs/2020/03/1038.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://notesail.com/posts/study-nodejs.html"},"headline":"nodejs学习记录","image":["https://cdn.jsdelivr.net/gh/haojie06/imgStorage/imgs/2020/03/1038.png"],"datePublished":"2020-03-10T14:37:10.000Z","dateModified":"2020-05-07T04:02:01.533Z","author":{"@type":"Person","name":"sailor"},"description":"node学习实践npmnpm是node的包管理工具，我们可以使用npm来安装依赖，也可以将自己编写好的程序上传到npm库中供他人使用。  参考链接 https:&#x2F;&#x2F;www.runoob.com&#x2F;nodejs&#x2F;nodejs-npm.html  安装模块我们可以使用npm install来安装npm模块，此时安装路径为当前目录下的node_modules文件夹,如果带上了-g参数，将进行全局安装，安装"}</script><link rel="alternative" href="/atom.xml" title="帆笔记" type="application/atom+xml"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/font-awesome/5.12.0/css/all.min.css"><link rel="stylesheet" href="https://fonts.loli.net/css?family=Ubuntu:400,600|Source+Code+Pro|Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Microsoft YaHei:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&amp;amp;subset=latin,latin-ext|Inconsolata|Itim|Lobster.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=UA-160639857-1" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-160639857-1');</script><!--!--><script src="https://cdnjs.loli.net/ajax/libs/pace/1.0.2/pace.min.js"></script><link rel="stylesheet" href="/css/style.css"><script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="/js/globalUtils.js"></script><script data-ad-client="ca-pub-6914153309632048" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async></script></head><body class="is-3-column has-navbar-fixed-top"><script data-ad-client="ca-pub-6914153309632048" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><nav class="navbar navbar-main is-fixed-top"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.png" alt="帆笔记" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">首页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/finemc">mc作品展</a><a class="navbar-item" href="/friend">友链</a><a class="navbar-item" href="/message">留言</a><a class="navbar-item" href="/about">关于</a><a class="navbar-item" href="https://igeeker.me">iGeeker</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/haojie06"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a></div></div></div></nav><script type="text/javascript" src="/js/theme-setting.js"></script><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="thumbnail" src="https://cdn.jsdelivr.net/gh/haojie06/imgStorage/imgs/2020/03/1038.png" alt="nodejs学习记录"></span></div><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><i class="far fa-calendar-plus"> </i>2020-03-10  <a class="commentCountImg" href="/posts/study-nodejs.html#comment-container"><span class="display-none-class">/posts/study-nodejs.html</span><i class="far fa-comment-dots"></i> <span class="commentCount" id="71a690139fbc7d93ecce72830feac347">99+</span>  </a><span class="level-item"><i class="far fa-clock"> </i>25 分钟  <i class="fas fa-pencil-alt"> </i>3.7 k</span><span class="level-item" id="busuanzi_container_page_pv"><i class="far fa-eye"></i>&nbsp;&nbsp;<span id="busuanzi_value_page_pv">0</span>次访问</span></div></div><h1 class="title is-3 is-size-4-mobile">nodejs学习记录</h1><div class="content"><h1 id="node学习实践"><a href="#node学习实践" class="headerlink" title="node学习实践"></a>node学习实践</h1><h2 id="npm"><a href="#npm" class="headerlink" title="npm"></a>npm</h2><p>npm是node的包管理工具，我们可以使用npm来安装依赖，也可以将自己编写好的程序上传到npm库中供他人使用。</p>
+<blockquote>
+<p>参考链接 <a href="https://www.runoob.com/nodejs/nodejs-npm.html">https://www.runoob.com/nodejs/nodejs-npm.html</a></p>
+</blockquote>
+<h3 id="安装模块"><a href="#安装模块" class="headerlink" title="安装模块"></a>安装模块</h3><p>我们可以使用<code>npm install</code>来安装npm模块，此时安装路径为当前目录下的<strong>node_modules</strong>文件夹,如果带上了-g参数，将进行全局安装，安装到 /usr/local 或 node 的安装目录，此时在其它的项目中也可以使用该模块。</p>
+<h3 id="创建模块"><a href="#创建模块" class="headerlink" title="创建模块"></a>创建模块</h3><h3 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令"></a>其他命令</h3><ul>
+<li>使用<code>npm uninstall</code>来卸载模块</li>
+<li>使用<code>npm update</code>更新模块</li>
+<li>使用<code>npm search</code>搜索模块<a id="more"></a>
+<h2 id="typescript"><a href="#typescript" class="headerlink" title="typescript"></a>typescript</h2></li>
+</ul>
+<blockquote>
+<p>TypeScript 是 JavaScript 的一个超集，支持 ECMAScript 6 标准。</p>
+<p>TypeScript 由微软开发的自由和开源的编程语言。</p>
+<p>TypeScript 设计目标是开发大型应用，它可以编译成纯 JavaScript，编译出来的 JavaScript 可以运行在任何浏览器上。</p>
+<p>TypeScript 是一种给 JavaScript 添加特性的语言扩展。增加的功能包括：</p>
+<ul>
+<li>类型批注和编译时类型检查</li>
+<li>类型推断</li>
+<li>类型擦除</li>
+<li>接口</li>
+<li>枚举</li>
+<li>Mixin</li>
+<li>泛型编程</li>
+<li>名字空间</li>
+<li>元组</li>
+<li>Await</li>
+</ul>
+<p>以下功能是从 ECMA 2015 反向移植而来：</p>
+<ul>
+<li>类</li>
+<li>模块</li>
+<li>lambda 函数的箭头语法</li>
+<li>可选参数以及默认参数</li>
+</ul>
+</blockquote>
+<p>TypeScript 可以通过类型注解提供编译时的静态类型检查，另外tsc可以将多个ts文件编译成一个js文件，于是我们可以将代码分散到多个文件中，条理更清晰，之后的学习实践都将使用Typescript来进行。</p>
+<h3 id="Typescript环境配置"><a href="#Typescript环境配置" class="headerlink" title="Typescript环境配置"></a>Typescript环境配置</h3><p>我们首先要安装Typescript的环境，使用<code>npm install -g typescript</code>即可，成功安装之后我们便可使用<code>tsc</code>来进行Typescript相关的操作。比如编写hello.ts</p>
+<pre><code>let say:string = &quot;hello world&quot;;
+console.log(say);`&lt;/pre&gt;
+
+使用`tsc hello.ts`将该文件编译为js文件，同一个目录下出现了名为hello.js的文件，使用`node hello.js`即可执行。
+
+### Typescript学习笔记
+
+关于Typescript的详细教程请查看[Typescript中文文档](https://www.tslang.cn/docs/home.html)以及[菜鸟教程Typescript](https://www.runoob.com/typescript/ts-basic-syntax.html)
+
+#### 面向对象
+
+ts是面向对象的语言
+
+&gt; *   **对象**：对象是类的一个实例，有状态和行为。</code></pre><blockquote>
+<ul>
+<li><strong>类</strong>：类是一个模板，它描述一类对象的行为和状态。</li>
+<li><strong>方法</strong>：方法是类的操作的实现步骤。</li>
+</ul>
+</blockquote>
+<pre><code>以下操作创建了一个类以及实例化了它的一个对象,并调用了对象的一个方法
+
+&lt;pre&gt;`class Friend { 
+   greet():void { 
+      console.log(&quot;hello!&quot;) 
+   } 
+} 
+var friend = new Friend(); 
+friend.greet();`&lt;/pre&gt;
+
+编译成的js文件内容如下
+
+&lt;pre&gt;`var Friend = /** @class */ (function () {
+    function Friend() {
+    }
+    Friend.prototype.greet = function () {
+        console.log(&quot;hello!&quot;);
+    };
+    return Friend;
+}());
+var friend = new Friend();
+friend.greet();
+`&lt;/pre&gt;
+
+#### 基础类型
+
+Typescript声明一个变量的时候，可以规定该变量的类型，格式`let a: number = 1;`</code></pre><ul>
+<li><p>any 此类型的变量可以赋予任何类型的值(编译时不会进行类型检查)</p>
+<pre>`let arrayList: any[] = [1, false, 'fine']; //可以定义一个可以储存任何类型的数组`</pre></li>
+<li><p>number: ts中没有整数类型以及浮点数类型，而都是使用number类型</p>
+</li>
+<li><p>string 字符串类型</p>
+</li>
+<li><p>boolean 布尔类型</p>
+</li>
+<li><p>数组类型<br>采用如下格式声明</p>
+<pre>`// 在元素类型后面加上[]
+let arr: number[] = [1, 2];
+// 或者使用数组泛型
+let arr: Array<number> = [1, 2];`</pre></li>
+<li><p>元组</p>
+<pre>`let x: [string, number];
+x = ['Runoob', 1];    // 运行正常
+x = [1, 'Runoob'];    // 报错
+console.log(x[0]);    // 输出 Runoob`</pre></li>
+<li><p><strong>枚举</strong></p>
+<pre>`enum Color {Red, Green, Blue};
+let c: Color = Color.Blue;
+console.log(c);    // 输出 2`</pre></li>
+<li><p>void 用于标识方法返回值 function hello(): void{}</p>
+</li>
+<li><p>null 表示对象缺失，null依旧是一个object(不同于undefined)</p>
+</li>
+<li><p>undefined 用于将变量初始化为一个未定义的值</p>
+</li>
+<li><p>never 是其它类型的子类型，代表永远不会出现的值</p>
+<p><strong>可以使用”</strong>|<strong>“来表示一个变量可以是多种类型，如<code>let x: number | null | undefined;</code></strong></p>
+<p>类型断言，可以使用<string>或者是value as string的方式来告诉编译器一个变量的类型。</p>
+<blockquote>
+<p>Null 和 Undefined 是其他任何类型（包括 void）的子类型，可以赋值给其它类型，如数字类型，此时，赋值后的类型会变成 null 或 undefined。而在TypeScript中启用严格的空校验（–strictNullChecks）特性，就可以使得null 和 undefined 只能被赋值给 void 或本身对应的类型</p>
+</blockquote>
+<h4 id="变量声明"><a href="#变量声明" class="headerlink" title="变量声明"></a>变量声明</h4><p>在较新的标准中加入了let和const两种变量声明方式</p>
+</li>
+<li><p>let<br>在ES6之前，我们都是用var来声明变量，而JS只有函数作用域和全局作用域，没有块级作用域，所以<code>{}</code>限定不了var声明变量的访问范围，新加入的let可以将变量的作用域限定在代码块中，并且无法在变量声明前使用该变量（如果使用var，该变量的声明会被提升到使用前），相同代码块中，同名变量不能多次声明，相对于var，let提升了安全性。</p>
+</li>
+<li><p>const<br>使用const修饰的变量拥有与let类似的作用域规则，除此之外它在被赋值后无法再次改变。</p>
+<h5 id="解构"><a href="#解构" class="headerlink" title="解构"></a>解构</h5></li>
+<li><p>数组解构</p>
+<pre>`let input = [1, 2];
+let [first, second] = input;
+console.log(first); // outputs 1
+console.log(second); // outputs 2`</pre>
+<pre>`// swap variables
+[first, second] = [second, first];`</pre>
+<p>使用…来获得剩余的变量</p>
+<pre>`let [first, ...rest] = [1, 2, 3, 4];
+console.log(first); // outputs 1
+console.log(rest); // outputs [ 2, 3, 4 ]`</pre></li>
+<li><p>对象解构</p>
+<pre>`let o = {
+  a: "foo",
+  b: 12,
+  c: "bar"
+};
+let { a, b } = o;`</pre>
+<p>若使用…获得剩余变量，解构出来的也是一个对象。</p>
+<pre>`//属性重命名 此处:不是用来指定类型
+let { a: newName1, b: newName2 } = o;`</pre></li>
+<li><p>函数解构<br>知道有这么个东西就好…</p>
+<h4 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h4><p>注意，ts可以以下面这种方式直接创建一个对象(不需要使用类) <code>let myObj = { size: 10, label: &quot;Size 10 Object&quot; };</code>,接口中可以描述属性以及方法。</p>
+<p>示例:</p>
+<pre>`interface LabelledValue {
+  label: string;
+}
+
+function printLabel(labelledObj: LabelledValue) {
+  console.log(labelledObj.label);
+}
+
+let myObj = {size: 10, label: "Size 10 Object"};
+printLabel(myObj);`</pre>
+</li>
+<li><p>可选属性<br>接口里的属性可以不是必须的，在变量名后使用 <strong>?:</strong> 来指定接口中的可选属性</p>
+</li>
+<li><p>只读属性<br>在变量名之前加上<strong>readonly</strong>来指定只读属性，只读属性只能在对象创建的时候修改其值，另外可以使用<strong>ReadonlyArray<number></strong>创建只读数组，此类数组创建后不可修改值，无法赋值给普通数组(<em>可以使用类型断言 ra as number[] 来转换</em>)</p>
+</li>
+<li><p>额外属性检查<br>如果直接传递对象，对象可以带有接口不存在的字段，但是如果传递的是对象字面量如 <code>let mySquare = createSquare({ colour: &quot;red&quot;, width: 100 });</code>会报错，可以使用类型断言绕开检测，或者添加<strong>字符串索引签名</strong>，在接口中加入<code>[propName: string]: any;</code>,表示该接口还可以有任意数量的属性。</p>
+</li>
+<li><p>函数接口<br>指定参数类型以及返回值类型</p>
+<pre>`interface SearchFunc {
+(source: string, subString: string): boolean;
+}`</pre></li>
+<li><p>索引类型<br>索引可以是数字或者字符串，<strong>当使用数字索引的时候实际上ts是将数字转换为字符串之后再索引对象</strong>,因此数字索引时返回的对象必须是字符串索引返回对象的子类。</p>
+<pre>`interface StringArray {
+}`</pre>
+<pre>`interface ReadonlyStringArray {
+  readonly [index: number]: string;
+}
+let myArray: ReadonlyStringArray = ["Alice", "Bob"];
+myArray[2] = "Mallory"; // error!`</pre></li>
+<li><p>接口继承<br>可使用extends进行继承，一个接口可以继承多个接口</p>
+<pre>`interface Shape {
+  color: string;
+}
+interface PenStroke {
+  penWidth: number;
+}
+interface Square extends Shape, PenStroke {
+  sideLength: number;
+}
+let square = <Square>{};
+square.color = "blue";
+square.sideLength = 10;
+square.penWidth = 5.0;`</pre>
+
+<h4 id="类"><a href="#类" class="headerlink" title="类"></a>类</h4><p>示例</p>
+<pre>`class Greeter {
+    greeting: string;
+    constructor(message: string) {
+        this.greeting = message;
+    }
+    greet() {
+        return "Hello, " + this.greeting;
+    }
+}
+
+let greeter = new Greeter("world");`</pre>
+
+<p>类可以使用继承，另外注意派生类如果有构造函数constructor，需要调用super(),继承之后方法可以重写，另外也可以使用多态，父类引用子类对象，最终调用方法时使用的还是子类的方法。</p>
+<h5 id="访问修饰符"><a href="#访问修饰符" class="headerlink" title="访问修饰符"></a>访问修饰符</h5><p>Typescript中的对象成员也有 public(默认，可不写)/private/protect 这几个访问修饰符，和java类似，private修饰的成员不能在类之外访问（子类也不行）而protect修饰的成员可以在子类中访问。</p>
+<p>若一个类的构造函数被标记为protect，该类不能被实例化，但是可以被继承，子类可以实例化。</p>
+<p>另外，可以使用<strong>readonly</strong>将成员属性设置为只读的，只读属性只能在声明时或者构造函数中赋值。</p>
+<p>还可以使用参数属性，定义与赋值在同一个地方进行</p>
+<blockquote>
+<p>TypeScript使用的是结构性类型系统。 当我们比较两种不同的类型时，并不在乎它们从何处而来，如果所有成员的类型都是兼容的，我们就认为它们的类型是兼容的。</p>
+<pre><code>然而，当我们比较带有 `private`或 `protected`成员的类型的时候，情况就不同了。 如果其中一个类型里包含一个 `private`成员，那么只有当另外一个类型中也存在这样一个 `private`成员， 并且它们都是**来自同一处声明**时，我们才认为这两个类型是兼容的。 对于 `protected`成员也使用这个规则。
+
+&lt;pre&gt;`class Animal {
+    private name: string;
+    constructor(theName: string) { this.name = theName; }
+}
+
+class Rhino extends Animal {
+    constructor() { super(&quot;Rhino&quot;); }
+}
+
+class Employee {
+    private name: string;
+    constructor(theName: string) { this.name = theName; }
+}
+
+let animal = new Animal(&quot;Goat&quot;);
+let rhino = new Rhino();
+let employee = new Employee(&quot;Bob&quot;);
+
+animal = rhino; //兼容，name来源相同
+animal = employee; // 错误: Animal 与 Employee 不兼容. 如果是public修饰的即认为兼容`&lt;/pre&gt;</code></pre></blockquote>
+<h5 id="存取器"><a href="#存取器" class="headerlink" title="存取器"></a>存取器</h5><p>注意存取器需要编译目标版本大等于于ES5</p>
+<p>ts的getter/setter和java不太一样，比如</p>
+<pre>`    private _fullName: string;
+
+    get fullName(): string {
+        return this._fullName;
+    }
+//之后调用get方法是用
+object.fullname的方式来执行的。`</pre>
+
+<h5 id="静态属性"><a href="#静态属性" class="headerlink" title="静态属性"></a>静态属性</h5><p>Typescript中也可以使用static修饰静态属性</p>
+<h5 id="抽象类"><a href="#抽象类" class="headerlink" title="抽象类"></a>抽象类</h5><p>可以使用abstract修饰抽象类，是用abstract修饰抽象类中的抽象方法，抽象方法不包含方法体，由派生类实现。抽象类不可实例化，抽象类引用的子类对象不可调用子类特有的方法。</p>
+<h4 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h4><h5 id="有名字的函数以及匿名函数"><a href="#有名字的函数以及匿名函数" class="headerlink" title="有名字的函数以及匿名函数"></a>有名字的函数以及匿名函数</h5><pre>`function add(x: number, y: number): number {
+    return x + y;
+}
+
+let myAdd = function(x: number, y: number): number { return x + y; };`</pre>
+
+<h5 id="可选参数以及默认参数"><a href="#可选参数以及默认参数" class="headerlink" title="可选参数以及默认参数"></a>可选参数以及默认参数</h5><p>默认情况下，参数的数量是必须满足函数的要求如果需要设置可选参数我们需要使用 <strong>?:</strong> 来指定一个可选参数，没有传递这个参数的时候，形参值为<strong>undefined</strong>,<strong>可选参数必须跟在必须参数的后面</strong></p>
+<p><code>function buildName(firstName: string, lastName?: string)</code></p>
+<p>除此之外，我们也可以设置参数的默认值，设置了默认值的参数如果用户没有传递有效值时，会使用默认值</p>
+<p><code>function buildName(firstName: string, lastName = &quot;Smith&quot;)</code></p>
+<h5 id="剩余参数"><a href="#剩余参数" class="headerlink" title="剩余参数"></a>剩余参数</h5><p>若我们无法预料会有多少个参数传入的时候可以使用剩余参数</p>
+<p>剩余参数会被当做个数不限的可选参数。 可以一个都没有，同样也可以有任意个。 编译器创建参数数组，名字是你在省略号（ <code>...</code>）后面给定的名字，你可以在函数体内使用这个数组。</p>
+<pre>`function buildName(firstName: string, ...restOfName: string[]) {
+  return firstName + " " + restOfName.join(" ");
+}`</pre>
+
+<h5 id="重载"><a href="#重载" class="headerlink" title="重载"></a>重载</h5><p>参数类型不同，数量不同，类型的顺序不同</p>
+<h4 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a>泛型</h4><p><em>有时间时需要继续深入了解</em></p>
+<pre>`function identity<T>(arg: T): T {
+    return arg;
+}`</pre>
+
+<p>类型变量T记录了传入的变量的类型，返回的也是已知类型的变量而非any</p>
+<p>使用时有下面两种方式 手动指定或者是用类型推论</p>
+<pre>`let output = identity<string>("myString");  // type of output will be 'string'
+//某些复杂情况可能无法使用下面这种形式，需要手动指定类型
+let output = identity("myString");  // type of output will be 'string'`</pre>
+
+<h4 id="命名空间"><a href="#命名空间" class="headerlink" title="命名空间"></a>命名空间</h4><p>如果要在外部调用命名空间中的类/接口，需要加上export关键字</p>
+<pre>`namespace SomeNameSpaceName { 
+   export interface ISomeInterfaceName {      }  
+   export class SomeClassName {      }  
+}`</pre>
+
+<p>在外部调用</p>
+<pre>`SomeNameSpaceName.SomeClassName;`</pre>
+
+<p>如果命名空间在另一ts文件中，需要使用三斜杠语法</p>
+<p><code>/// &lt;reference path = &quot;SomeFileName.ts&quot; /&gt;</code></p>
+<h4 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h4><pre>`// 模块导出部分
+// 文件名 : SomeInterface.ts 
+export interface SomeInterface { 
+   // 代码部分
+}`</pre>
+<pre>`// 需要使用模块时进行导入
+import someInterfaceRef = require("./SomeInterface");`</pre>
+<blockquote>
+<p>Typescript中还有许多的高级用法我还没有学习，在将来的学习中还需要返回来深入了解。</p>
+</blockquote>
+<h3 id="使用Typescript创建一个nodejs项目"><a href="#使用Typescript创建一个nodejs项目" class="headerlink" title="使用Typescript创建一个nodejs项目"></a>使用Typescript创建一个nodejs项目</h3><p>实际使用Typescript时，我们就不像上面那样直接使用tsc命令并带上一系列参数来编译ts文件，这是我们需要一个名为<strong>tsconfig.json</strong>的Typescript编译配置文件。</p>
+<p>项目目录结构如下</p>
+<p>├─build<br>├─node_modules<br>│  ├─.bin<br>│  ├─@types<br>│  │  └─node<br>│  │      └─ts3.2<br>│  ├─http<br>│  └─typescript<br>└─src</p>
+<p>在项目根目录下执行 <code>tsc --init</code> 将会生成tsconfig.json文件，文件里面的配置项有很多，我们只修改其中的几项。</p>
+<pre>`{
+  "compilerOptions": {
+    "target": "es6",                          /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019' or 'ESNEXT'. */
+    "module": "commonjs",                     /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
+     "outDir": "./build",                        /* Redirect output structure to the directory. */
+     "rootDir": "./src",                       /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
+
+    "strict": true,                           /* Enable all strict type-checking options. */
+    "noImplicitAny": false,                 /* Raise error on expressions and */
+    "esModuleInterop": true                   /* Enables emit interoperability between */
+  }
+}`</pre>
+
+<p>保存配置文件之后，我们只需要在项目根目录输入tsc，就可以将src文件夹中的ts文件编译，产生的js文件会储存在build文件夹中。</p>
+<h4 id="使用-d-ts文件"><a href="#使用-d-ts文件" class="headerlink" title="使用.d.ts文件"></a>使用.d.ts文件</h4><p>我们在项目中常常需要用到内建模块或者第三方模块，但是在.ts文件中是没办法直接导入模块的。</p>
+<p>我们可以在项目目录下执行<code>npm install --save-dev @types/node</code>获得node的类型说明文件，但是这个方法只能解决内建模块的说明文件问题，对于第三方模块</p>
+</li>
+<li><p><a href="http://microsoft.github.io/TypeSearch/">http://microsoft.github.io/TypeSearch/</a></p>
+<p>我们可以修改package.json</p>
+<pre>`    "scripts": {
+        "build": "tsc"
+    }
+
+</li>
+</ul>
+<p>之后我们只需要使用npm run build即可执行tsc命令（当然在将来的应用中我们往往不是只执行这一条简单的命令），比如可以加入<code>&quot;dev&quot;: &quot;supervisor -w build ./build/server.js&quot;</code>之后执行npm run dev来持续监控脚本，在js文件变化后重启服务器。</p>
+<h2 id="node"><a href="#node" class="headerlink" title="node"></a>node</h2></div><ul class="post-copyright"><li><strong>本文标题：</strong><a href="https://notesail.com/posts/study-nodejs.html">nodejs学习记录</a></li><li><strong>本文作者：</strong><a href="https://notesail.com">haojie06</a></li><li><strong>本文链接：</strong><a href="https://notesail.com/posts/study-nodejs.html">https://notesail.com/posts/study-nodejs.html</a></li><li><strong>版权声明：</strong><span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</span></li></ul><div><div class="recommend-post"><span class="is-size-6 has-text-grey has-mr-7"># 推荐文章</span><br><span>  1.<a class="is-size-6" href="/posts/linux-bedrockx.html" target="_blank">在Linux上运行bdx(BedrockX)开设基岩版MC插件服</a><br></span><span>  2.<a class="is-size-6" href="/posts/macvlan-host.html" target="_blank">macvlan模式容器与宿主机通信</a><br></span><span>  3.<a class="is-size-6" href="/posts/setup-typecho.html" target="_blank">ubuntu手动安装lnmp+Typecho</a><br></span><span>  4.<a class="is-size-6" href="/posts/cloudflare-custom.html" target="_blank">cloudflare自定义节点 加速访问</a><br></span></div></div><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/social-share.js/1.0.16/css/share.min.css"><div class="social-share"></div><script src="https://cdnjs.loli.net/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3><div class="buttons is-centered"><a class="button is-info donate"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>支付宝</span><span class="qrcode"><img src="https://i.loli.net/2020/03/11/kxPRDrJqCpIFHYU.png" alt="支付宝"></span></a><a class="button is-success donate"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>微信</span><span class="qrcode"><img src="https://i.loli.net/2020/03/11/ZkY7Ud2oMNyW6VT.png" alt="微信"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/posts/macvlan-host.html"><i class="level-item fas fa-chevron-left"></i><span class="level-item">macvlan模式容器与宿主机通信</span></a></div></nav><div class="card widget"><div class="g-ads-x"><div class="card-content"><h3 class="menu-label">温馨提示！此处可能会出现广告！</h3><br><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-6914153309632048" data-ad-slot="8728493258"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div></div><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div class="content" id="comment-container"></div><script>var valine = new Valine({
+            el: '#comment-container' ,
+            notify: true,
+            verify: true,
+            appId: '0XGij6tLgXUrIo3pGPRhRMeF-MdYXbMMI',
+            appKey: 'b3aUsbf5wslfBJ8ksUxAfnpB',
+            placeholder: '留下你的评论吧！留下邮箱和名字就可以接收邮件通知了，不过不要乱填哦。',
+            avatar: 'identicon',
+            avatarForce: false,
+            meta: ["nick","mail","link"],
+            pageSize: 10,
+            visitor: false,
+            highlight: true,
+            recordIP: false,
+            path:'/posts/study-nodejs.html'
+        });</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1 is-sticky"><div class="card widget toc-scroll" id="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="is-flex" id="toc-item-node学习实践" href="#node学习实践"><span>node学习实践</span></a><ul class="menu-list"><li><a class="is-flex" id="toc-item-npm" href="#npm"><span>npm</span></a><ul class="menu-list"><li><a class="is-flex" id="toc-item-安装模块" href="#安装模块"><span>安装模块</span></a></li><li><a class="is-flex" id="toc-item-创建模块" href="#创建模块"><span>创建模块</span></a></li><li><a class="is-flex" id="toc-item-其他命令" href="#其他命令"><span>其他命令</span></a></li></ul></li><li><a class="is-flex" id="toc-item-typescript" href="#typescript"><span>typescript</span></a><ul class="menu-list"><li><a class="is-flex" id="toc-item-模块" href="#模块"><span>模块</span></a></li><li><a class="is-flex" id="toc-item-使用-d-ts文件" href="#使用-d-ts文件"><span>使用.d.ts文件</span></a></li></ul></li><li><a class="is-flex" id="toc-item-node" href="#node"><span>node</span></a></li></ul></li></ul></div></div><script type="text/javascript" async>
+        $(document).ready(function () { //参考自 https://github.com/ppoffice/hexo-theme-icarus/pull/616/files
+            var observerTopMargin;
+            var scrollObserver;
+            var headerElems = $(".headerlink");
+            var activeTocItem;
+        
+            function initIntersectionObserver(docHeight) {
+                observerTopMargin = docHeight;
+                scrollObserver = new IntersectionObserver(scrollCallBack,
+                    {
+                        root: null,  // viewpoint
+                        rootMargin: docHeight + "px 0px -80% 0px"  // cover top 30% of viewport to the top of document
+                    })
+            }
+        
+            function scrollCallBack(entries, observer) {
+                if ($(window).scrollTop() > observerTopMargin * 0.7) { 
+                    // User somehow scroll to 70% of observerTopMargin (which is inited as 200% document height)
+                    // Observer top margin need to extend to cover all the space to the top of the document
+                    initIntersectionObserver(observerTopMargin * 2)
+                    observer.disconnect();
+                    return;
+                }
+                let toActive;
+                if (entries[0].intersectionRatio == 1) {  // enter viewed area
+                    let entry = entries.reduce((u, v) => (u.target.toc_id > v.target.toc_id ? u : v));  // get the lowest item
+                    toActive = $("#toc-item-" + $(entry.target).attr("href").substr(1));
+                } else {
+                    let entry = entries.reduce((u, v) => (u.target.toc_id < v.target.toc_id ? u : v));  // get the highest item
+                    let idx = Math.max(entry.target.toc_id - 1, 0);
+                    toActive = $("#toc-item-" + $(headerElems[idx]).attr("href").substr(1));
+                }
+                if (activeTocItem) activeTocItem.removeClass("is-current");
+                activeTocItem = toActive
+                activeTocItem.addClass("is-current");
+            }
+        
+            initIntersectionObserver($(document).height() * 2);
+            headerElems.each(function (index, obj) {
+                obj.toc_id = index;
+                scrollObserver.observe(obj);
+            })
+        });</script></div><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="" src="https://cdn.jsdelivr.net/gh/haojie06/imgStorage/imgs/2020/04/0642.png" alt="帆笔记"></figure><p class="title is-size-4 is-block line-height-inherit">帆笔记</p><p class="is-size-6 is-block">轻帆远航</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>PRC</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">21</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">6</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">26</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/haojie06" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-white is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/haojie06"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-white is-marginless" target="_blank" rel="noopener" title="Telegram" href="https://t.me/ajie06"><i class="fab fa-telegram-plane"></i></a><a class="level-item button is-transparent is-white is-marginless" target="_blank" rel="noopener" title="Email" href="mailto:whaojie06@gmail.com"><i class="fa fa-envelope"></i></a><a class="level-item button is-transparent is-white is-marginless" target="_blank" rel="noopener" title="RSS" href="/atom.xml"><i class="fas fa-rss"></i></a></div><div><hr><p id="hitokoto">:D 一言句子获取中...</p><script type="text/javascript" defer>function getYiyan(){
+                                $.getJSON("https://v1.hitokoto.cn/?c=i", function (data) {
+                                if(data){
+                                    $('#hitokoto').html("");
+                                    $('#hitokoto').append("<strong style='color: #3273dc;'>"+data.hitokoto+"</strong>"+
+                                    "<p>"+"来源《"+data.from+"》");
+                                }});}
+                                $(function (){getYiyan();$('#hitokoto').click(function(){getYiyan();})});</script></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">最新评论</h3><span class="body_hot_comment">加载中，最新评论有1分钟缓存...</span></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><a class="media-left" href="/posts/hello-hexo.html"><p class="image is-64x64"><img class="thumbnail" src="https://haojie-storage.oss-cn-shenzhen.aliyuncs.com/image/2020/03/1242.png" alt="Hello Hexo"></p></a><div class="media-content size-small"><p><time dateTime="2020-05-07T04:02:01.509Z">2020-05-07</time></p><p class="title is-6"><a class="link-muted" href="/posts/hello-hexo.html">Hello Hexo</a></p><p class="is-uppercase"></p></div></article><article class="media"><a class="media-left" href="/posts/valine-admin.html"><p class="image is-64x64"><img class="thumbnail" src="https://haojie-storage.oss-cn-shenzhen.aliyuncs.com/image/2020/04/0845.png" alt="hexo使用valine评论并支持邮件通知"></p></a><div class="media-content size-small"><p><time dateTime="2020-04-16T12:01:56.000Z">2020-04-16</time></p><p class="title is-6"><a class="link-muted" href="/posts/valine-admin.html">hexo使用valine评论并支持邮件通知</a></p><p class="is-uppercase"><i class="fas fa-folder-open has-text-grey"> </i><a class="link-muted" href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a> / <a class="link-muted" href="/categories/%E6%9D%82%E8%B0%88/%E5%88%86%E4%BA%AB/">分享</a></p></div></article><article class="media"><a class="media-left" href="/posts/cloudflare-realip.html"><p class="image is-64x64"><img class="thumbnail" src="https://haojie-storage.oss-cn-shenzhen.aliyuncs.com/image/2020/04/1219.png" alt="nginx访问日志记录cloudflare后真实ip"></p></a><div class="media-content size-small"><p><time dateTime="2020-04-11T16:11:37.000Z">2020-04-12</time></p><p class="title is-6"><a class="link-muted" href="/posts/cloudflare-realip.html">nginx访问日志记录cloudflare后真实ip</a></p><p class="is-uppercase"><i class="fas fa-folder-open has-text-grey"> </i><a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a> / <a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/">实践</a></p></div></article><article class="media"><a class="media-left" href="/posts/linux-manage-windows.html"><p class="image is-64x64"><img class="thumbnail" src="https://cdn.jsdelivr.net/gh/haojie06/imgStorage/imgs/2020/04/1221.png" alt="Linux下管理Windows"></p></a><div class="media-content size-small"><p><time dateTime="2020-04-07T03:55:50.000Z">2020-04-07</time></p><p class="title is-6"><a class="link-muted" href="/posts/linux-manage-windows.html">Linux下管理Windows</a></p><p class="is-uppercase"><i class="fas fa-folder-open has-text-grey"> </i><a class="link-muted" href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a> / <a class="link-muted" href="/categories/%E6%9D%82%E8%B0%88/%E6%8A%98%E8%85%BE/">折腾</a></p></div></article><article class="media"><a class="media-left" href="/posts/kvm-bridge.html"><p class="image is-64x64"><img class="thumbnail" src="https://cdn.jsdelivr.net/gh/haojie06/imgStorage/imgs/2020/04/1126.png" alt="kvm单网卡桥接模式"></p></a><div class="media-content size-small"><p><time dateTime="2020-04-07T02:45:33.000Z">2020-04-07</time></p><p class="title is-6"><a class="link-muted" href="/posts/kvm-bridge.html">kvm单网卡桥接模式</a></p><p class="is-uppercase"><i class="fas fa-folder-open has-text-grey"> </i><a class="link-muted" href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a> / <a class="link-muted" href="/categories/%E6%9D%82%E8%B0%88/%E6%8A%98%E8%85%BE/">折腾</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">网站访客</h3><script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5jdf0azne8l&amp;amp;m=0&amp;amp;c=ff0000&amp;amp;cr1=ffffff&amp;amp;f=arial&amp;amp;l=33" async="async"></script></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/%E6%8A%80%E6%9C%AF/"><span class="level-start"><span class="level-item">技术</span></span><span class="level-end"><span class="level-item tag">7</span></span></a><ul class="mr-0"><li><a class="level is-mobile is-marginless" href="/categories/%E6%8A%80%E6%9C%AF/%E5%AD%A6%E4%B9%A0/"><span class="level-start"><span class="level-item">学习</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"><span class="level-start"><span class="level-item">实践</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li></ul></li><li><a class="level is-mobile is-marginless" href="/categories/%E6%9D%82%E8%B0%88/"><span class="level-start"><span class="level-item">杂谈</span></span><span class="level-end"><span class="level-item tag">13</span></span></a><ul class="mr-0"><li><a class="level is-mobile is-marginless" href="/categories/%E6%9D%82%E8%B0%88/%E5%88%86%E4%BA%AB/"><span class="level-start"><span class="level-item">分享</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%E6%9D%82%E8%B0%88/%E6%8A%98%E8%85%BE/"><span class="level-start"><span class="level-item">折腾</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li></ul></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/%E5%BB%BA%E7%AB%99/"><span class="tag">建站</span><span class="tag is-grey-lightest">6</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Minecraft/"><span class="tag">Minecraft</span><span class="tag is-grey-lightest">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/docker/"><span class="tag">docker</span><span class="tag is-grey-lightest">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/"><span class="tag">Minecraft服务器</span><span class="tag is-grey-lightest">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/nodejs/"><span class="tag">nodejs</span><span class="tag is-grey-lightest">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%BC%96%E7%A8%8B/"><span class="tag">编程</span><span class="tag is-grey-lightest">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%8A%98%E8%85%BE/"><span class="tag">折腾</span><span class="tag is-grey-lightest">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"><span class="tag">虚拟机</span><span class="tag is-grey-lightest">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%8D%9A%E5%AE%A2/"><span class="tag">博客</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/kvm/"><span class="tag">kvm</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/nginx/"><span class="tag">nginx</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/javascript/"><span class="tag">javascript</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/typecho/"><span class="tag">typecho</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/windows/"><span class="tag">windows</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/wordpress/"><span class="tag">wordpress</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%88%86%E4%BA%AB/"><span class="tag">分享</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%89%8D%E7%AB%AF/"><span class="tag">前端</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/metasploit/"><span class="tag">metasploit</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/docker%E7%BD%91%E7%BB%9C/"><span class="tag">docker网络</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"><span class="tag">微信小程序</span><span class="tag is-grey-lightest">1</span></a></div></div><div class="field is-grouped is-grouped-multiline"><a class="tags has-addons" href="/tags/"><span class="tag">查看全部&gt;&gt;</span></a></div></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2020/05/"><span class="level-start"><span class="level-item">五月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/04/"><span class="level-start"><span class="level-item">四月 2020</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/03/"><span class="level-start"><span class="level-item">三月 2020</span></span><span class="level-end"><span class="level-item tag">15</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">订阅更新</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=notesail&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="notesail" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button is-primary" type="submit" value="订阅"></div></div><p class="help">输入邮箱开始订阅，更博后邮件通知！</p></form></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">广告</h3><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6914153309632048" data-ad-slot="4958722911" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">广告</h3><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6914153309632048" data-ad-slot="4958722911" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.png" alt="帆笔记" height="28"></a><p class="size-small"><span>&copy; 2020 haojie06</span>  Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>,Modify by <a href="https://github.com/removeif/hexo-theme-amazing" target="_blank">removeif</a> <br><span>© 版权说明：[本网站所有内容均收集于互联网或自己创作,<br />&nbsp;&nbsp;&nbsp;&nbsp;方便于网友与自己学习交流，如有侵权，请<a href="/message" target="_blank">留言</a>，立即处理]<br /></span><span><span id="statistic-times">loading...</span><script>function createTime(time) {
+            var n = new Date(time);
+            now.setTime(now.getTime() + 250),
+                days = (now - n) / 1e3 / 60 / 60 / 24,
+                dnum = Math.floor(days),
+                hours = (now - n) / 1e3 / 60 / 60 - 24 * dnum,
+                hnum = Math.floor(hours),
+            1 == String(hnum).length && (hnum = "0" + hnum),
+                minutes = (now - n) / 1e3 / 60 - 1440 * dnum - 60 * hnum,
+                mnum = Math.floor(minutes),
+            1 == String(mnum).length && (mnum = "0" + mnum),
+                seconds = (now - n) / 1e3 - 86400 * dnum - 3600 * hnum - 60 * mnum,
+                snum = Math.round(seconds),
+            1 == String(snum).length && (snum = "0" + snum),
+                document.getElementById("statistic-times").innerHTML = "❤️本站自 <strong>"+time.split(" ")[0].replace(/\//g,".")+"</strong> 已运行 <strong>" + dnum + "</strong> 天 <strong>" + hnum + "</strong> 小时 <strong>" + mnum + "</strong> 分 <strong>" + snum + "</strong> 秒！❤️";
+        }var now = new Date();setInterval("createTime('2020/3/10 00:00:00')", 250,"");</script><br></span><div class="size-small"><span>❤️感谢 <strong><span id="busuanzi_value_site_uv">99+</span></strong> 小伙伴的 <strong><span id="busuanzi_value_site_pv">99+</span></strong> 次光临！❤️</span></div></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/haojie06"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdnjs.loli.net/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            site: {
+                url: 'https://notesail.com',
+                external_link: {"enable":true,"exclude":[]}
+            },
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="https://cdnjs.loli.net/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" defer></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back-to-top.js" defer></script><!--!--><!--!--><script src="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.12/js/lightgallery-all.min.js" defer></script><script src="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js" defer></script><!--!--><!--!--><!--!--><script src="/js/toc.js" defer></script><script src="/js/main.js" defer></script><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="https://cdnjs.loli.net/ajax/libs/valine/1.4.4/Valine.min.js"></script><script src="/js/md5.min.js"></script><script>$.getScript('/js/comment-issue-data.js',function(){loadIssueData('0XGij6tLgXUrIo3pGPRhRMeF-MdYXbMMI','b3aUsbf5wslfBJ8ksUxAfnpB','sailor','undefined',true);})</script><link rel="stylesheet" href="/css/insight.css"><div class="searchbox ins-search"><div class="searchbox-container ins-search-container"><div class="searchbox-input-wrapper"><input class="searchbox-input ins-search-input" type="text" placeholder="想要查找什么..."><span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span></div><div class="searchbox-result-wrapper ins-section-wrapper"><div class="ins-section-container"></div></div></div></div><script>(function (window) {
+            var INSIGHT_CONFIG = {
+                TRANSLATION: {
+                    POSTS: '文章',
+                    PAGES: '页面',
+                    CATEGORIES: '分类',
+                    TAGS: '标签',
+                    UNTITLED: '(无标题)',
+                },
+                CONTENT_URL: '/content.json',
+            };
+            window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+        })(window);</script><script src="/js/insight.js" defer></script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.js"></script><script type="text/javascript">var pjax = new Pjax({
+            elements: "a",//代表点击链接就更新
+            selectors: [  //代表要更新的节点
+                ".section",
+                "title"
+            ],
+            cache: true,
+            cacheBust:false
+        })
+
+        function loadBusuanzi(){
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js", function () {});
+        }
+
+        // 开始 PJAX 执行的函数
+        document.addEventListener('pjax:send', function () {
+        });
+        
+        // PJAX 完成之后执行的函数，可以和上面的重载放在一起
+        document.addEventListener('pjax:complete', function () {
+            $(".section").css({opacity:1});
+            if(true){
+                $.getScript('/js/comment-issue-data.js',function(){loadIssueData('0XGij6tLgXUrIo3pGPRhRMeF-MdYXbMMI','b3aUsbf5wslfBJ8ksUxAfnpB','sailor','undefined',true);});
+            }
+            if(false){
+                loadMathJax();
+            }
+            loadMainJs(jQuery, window.moment, window.ClipboardJS, window.IcarusThemeSettings);
+            loadBackTop();
+            loadBusuanzi();
+            if(typeof loadBanner == 'function'){
+                loadBanner();
+            }
+        });</script></body></html>

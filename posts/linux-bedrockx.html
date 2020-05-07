@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.0"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><meta name="keywords" content="bedrock,minecraft,我的世界,我的世界开服,基岩版"><meta name="description" content="本文介绍了如何在Linux上安装wine5.0并使用bedrockx(bdx)开设支持插件的Minecraft 基岩版服务器。"><meta name="author" content="sailor"><title>在Linux上运行bdx(BedrockX)开设基岩版MC插件服 - 帆笔记</title><script data-ad-client="ca-pub-6914153309632048" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><meta description="本文介绍了如何在Linux上安装wine5.0并使用bedrockx(bdx)开设支持插件的Minecraft 基岩版服务器。"><meta property="og:type" content="article"><meta property="og:title" content="在Linux上运行bdx(BedrockX)开设基岩版MC插件服"><meta property="og:url" content="https://notesail.com/posts/linux-bedrockx.html"><meta property="og:site_name" content="帆笔记"><meta property="og:description" content="本文介绍了如何在Linux上安装wine5.0并使用bedrockx(bdx)开设支持插件的Minecraft 基岩版服务器。"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://haojie-storage.oss-cn-shenzhen.aliyuncs.com/image/2020/04/0708.png"><meta property="article:published_time" content="2020-04-04T10:18:15.000Z"><meta property="article:modified_time" content="2020-05-07T04:02:01.833Z"><meta property="article:author" content="sailor"><meta property="article:tag" content="bedrock"><meta property="article:tag" content="minecraft"><meta property="article:tag" content="我的世界"><meta property="article:tag" content="我的世界开服"><meta property="article:tag" content="基岩版"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="https://haojie-storage.oss-cn-shenzhen.aliyuncs.com/image/2020/04/0708.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://notesail.com/posts/linux-bedrockx.html"},"headline":"在Linux上运行bdx(BedrockX)开设基岩版MC插件服","image":["https://haojie-storage.oss-cn-shenzhen.aliyuncs.com/image/2020/04/0708.png"],"datePublished":"2020-04-04T10:18:15.000Z","dateModified":"2020-05-07T04:02:01.833Z","author":{"@type":"Person","name":"sailor"},"description":"本文介绍了如何在Linux上安装wine5.0并使用bedrockx(bdx)开设支持插件的Minecraft 基岩版服务器。"}</script><link rel="alternative" href="/atom.xml" title="帆笔记" type="application/atom+xml"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/font-awesome/5.12.0/css/all.min.css"><link rel="stylesheet" href="https://fonts.loli.net/css?family=Ubuntu:400,600|Source+Code+Pro|Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Microsoft YaHei:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&amp;amp;subset=latin,latin-ext|Inconsolata|Itim|Lobster.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=UA-160639857-1" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-160639857-1');</script><!--!--><script src="https://cdnjs.loli.net/ajax/libs/pace/1.0.2/pace.min.js"></script><link rel="stylesheet" href="/css/style.css"><script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="/js/globalUtils.js"></script><script data-ad-client="ca-pub-6914153309632048" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async></script></head><body class="is-3-column has-navbar-fixed-top"><script data-ad-client="ca-pub-6914153309632048" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><nav class="navbar navbar-main is-fixed-top"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.png" alt="帆笔记" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">首页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/finemc">mc作品展</a><a class="navbar-item" href="/friend">友链</a><a class="navbar-item" href="/message">留言</a><a class="navbar-item" href="/about">关于</a><a class="navbar-item" href="https://igeeker.me">iGeeker</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/haojie06"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a></div></div></div></nav><script type="text/javascript" src="/js/theme-setting.js"></script><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="thumbnail" src="https://haojie-storage.oss-cn-shenzhen.aliyuncs.com/image/2020/04/0708.png" alt="在Linux上运行bdx(BedrockX)开设基岩版MC插件服"></span></div><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><div style="color: #3273dc;font-size: 1.8rem;"><i class="fas fa-arrow-alt-circle-up"></i> </div><i class="far fa-calendar-plus"> </i>2020-04-04  <a class="commentCountImg" href="/posts/linux-bedrockx.html#comment-container"><span class="display-none-class">/posts/linux-bedrockx.html</span><i class="far fa-comment-dots"></i> <span class="commentCount" id="23cd1895461b3816b12ed5f58b036d6c">99+</span>  </a><span class="level-item"><i class="far fa-clock"> </i>12 分钟  <i class="fas fa-pencil-alt"> </i>1.7 k</span><span class="level-item" id="busuanzi_container_page_pv"><i class="far fa-eye"></i>&nbsp;&nbsp;<span id="busuanzi_value_page_pv">0</span>次访问</span></div></div><h1 class="title is-3 is-size-4-mobile">在Linux上运行bdx(BedrockX)开设基岩版MC插件服</h1><div class="content"><h2 id="BedrockX-开设基岩版插件服"><a href="#BedrockX-开设基岩版插件服" class="headerlink" title="BedrockX 开设基岩版插件服"></a>BedrockX 开设基岩版插件服</h2><div class="tocStart"></div>
+
+<!-- toc -->
+
+<ul>
+<li><a href="#在windows上生成服务端程序">在windows上生成服务端程序</a></li>
+<li><a href="#安装wine50">安装wine5.0</a><ul>
+<li><a href="#安装c运行库">安装C++运行库</a></li>
+</ul>
+</li>
+<li><a href="#开始运行bdx">开始运行bdx</a></li>
+<li><a href="#参考">参考</a></li>
+</ul>
+<!-- tocstop -->
+
+<div class="tocEnd"></div>
+bds的推出使得基岩版终于能够开设私人专用服务器，但是由于mojang并不重视服务端的开发，在bds推出一年多以后服务端依旧是bug多多，且不提供插件api，不具有行为包的完整特性，看上去就像是一个半成品。(虽然官方也说了这就是alpha版本)这也给多人服务器的开设造成了巨大的不方便，比如无法传送到他人的位置，无法使用领地保护*(曾经我们都是用命令方块来圈地的)*，无法反作弊等等。虽然官方推出的服务端就是个半成品，但是一年多来各位大佬为更好的开服体验做出了诸多的贡献，比如之前的Codehz的StoneServer，Sysca11的bdlauncher等等作品都在原版bds的基础上提供了api，Codehz的StoneServer扩展了官方的脚本api(在官方将其从bds中国移除之后Codehz还自己将api加了进去)使得用js制作服务端插件成为可能，而Sysca11在他的bdlauncher基础上还做出了圈地/传送/经济等各种插件...这些在一开始都是难以想象的，bds服能有今天那么丰富的内容首先得感谢诸位开发者的贡献。
+
+<p>随着时间的发展，支持插件的服务端也在变化，Stoneserver很可惜的停更了，但是Codehz在最近推出了全新的Element Zero，而bdl也发展成了bdx。这两者和之前的服务端的一个巨大的差异就是，他们都是基于windows版本的bds，<del>据说</del>在性能上相对linux的bds会有很大的提升，并且可以在windows server上使用了，<strong>linux也依旧可以通过wine来使用。</strong>这篇文章介绍如何在Linux上使用bdx，如果要在windows上使用的话则可以参考 <a href="https://www.jianshu.com/p/e1ccd0f96fd6">https://www.jianshu.com/p/e1ccd0f96fd6</a> 。 </p>
+<p><strong><a href="https://github.com/Sysca11/BedrockX-bin">bdx项目地址</a></strong></p>
+<blockquote>
+<p>本机环境</p>
+<p>Windows10</p>
+<p>Ubuntu1804 （因为bdx需要在wine5.0以上运行，推荐直接使用1904以上的系统。）</p>
+</blockquote>
+<h3 id="在windows上生成服务端程序"><a href="#在windows上生成服务端程序" class="headerlink" title="在windows上生成服务端程序"></a>在windows上生成服务端程序</h3><p>据作者所说</p>
+<blockquote>
+<p>注意：RoDB.exe在wine环境似乎工作不正常，请用相同pdb在windows下生成symdb，再复制过来</p>
+</blockquote>
+<p>所以我们现在windows上运行程序，生成所需要的资源，在成功运行bdx之后再打包放到我们的linux服务器上。</p>
+<p>新建一个文件夹(我这里就叫bdx了)，从<a href="https://minecraft.net/en-us/download/server/bedrock/">官网</a>下载<strong>windows 版本的服务端压缩包</strong>放进去，然后从<a href="https://github.com/Sysca11/BedrockX-bin">项目页面</a>下载base_env.7z、release_dbg_x.7z两个文件放到该文件夹下。</p>
+<p><img src="https://haojie-storage.oss-cn-shenzhen.aliyuncs.com/image/2020/04/0529.png" alt=""></p>
+<p>解压三个文件夹，然后将得到的base_env和release_xx两个文件夹中的文件都移动到得到的两个文件夹外(bdx文件夹中)。运行 RoDB.exe,如果bedrock_server.symdb和bedrock_server.symdef两个文件生成的话就可以了。之后双击运行bedrock_server.exe，如果显示如下，就算成功在windows上配置运行了。</p>
+<p><img src="https://haojie-storage.oss-cn-shenzhen.aliyuncs.com/image/2020/04/0539.png" alt=""></p>
+<p>如果你是windows开服到这里就足够了，不过要是你想用linux开服就还要多做几步。</p>
+<p>使用zip将整个bdx文件夹压缩，并使用sftp之类的方式传送到服务器上。</p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-6914153309632048"
+     data-ad-slot="6612533591"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h3 id="安装wine5-0"><a href="#安装wine5-0" class="headerlink" title="安装wine5.0"></a>安装wine5.0</h3><p><strong>bdx需要在wine5.0以上的环境运行，不然会出错。</strong>可惜大部分源中的wine都是3.0左右的版本。所以我们还需要添加源并安装wine5.0。以ubuntu为例(下面的方法1604~1910都可用)。此处参考了<a href="http://ubuntuhandbook.org/index.php/2020/01/install-wine-5-0-stable-ubuntu-18-04-19-10/">ubuntuhandbook</a>的教程.</p>
+<blockquote>
+<p><strong>1904以下的版本</strong><br>ubuntu1904以下的版本如果直接安装会遇到很多依赖无法解决的问题，所以请首先安装下列依赖。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">sudo apt-get install libgnutls30:i386 libldap-2.4-2:i386 libgpg-error0:i386 libxml2:i386 libasound2-plugins:i386 libsdl2-2.0-0:i386 libfreetype6:i386 libdbus-1-3:i386 libsqlite3-0:i386</span></span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p><strong>龟速下载警告！！</strong></p>
+<p>下面这些操作使用了国外的软件源，如果你的服务器在国内，大概率在下载时遇到速度基本没有的情况(得下载几百MB的文件)，所以强烈建议使用代理。</p>
+<p>在服务器上运行代理软件之后，假设在1080端口开启了socks5代理，那么在使用apt命令的时候只需要使用 <em>sudo apt-get -o Acquire::http::proxy=”socks5h://127.0.0.1:1080/“ update</em> 这样的形式即可。</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">sudo dpkg --add-architecture i386</span><br><span class="line">wget -nc https://dl.winehq.org/wine-builds/winehq.key; sudo apt-key add winehq.key</span><br><span class="line"><span class="meta">#</span><span class="bash"> 下面的eoan请修改成和系统对应的代号 如 ubuntu1804 改成 bionic ubuntu 1604改成 xenial</span></span><br><span class="line">sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ eoan main'</span><br><span class="line">sudo add-apt-repository ppa:cybermax-dexter/sdl2-backport</span><br><span class="line"><span class="meta">#</span><span class="bash"> 最后开始安装wine5.0</span></span><br><span class="line">sudo apt update &amp;&amp; sudo apt install --install-recommends winehq-stable</span><br></pre></td></tr></table></figure>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-6914153309632048"
+     data-ad-slot="6612533591"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<p>如果网络够好的话很快就能装上，网络不好的话…一天都装不上。安装完毕之后使用wine –version，显示5.0即可。<em>我在另一台服务器上遇到了缺少libfdk-aac库的情况，前往<a href="https://ubuntu.pkgs.org/18.04/ubuntu-multiverse-i386/libfdk-aac1_0.1.5-1_i386.deb.html下载amd64和i386版本的deb包手动使用dpkg">https://ubuntu.pkgs.org/18.04/ubuntu-multiverse-i386/libfdk-aac1_0.1.5-1_i386.deb.html下载amd64和i386版本的deb包手动使用dpkg</a> -i 安装之后即可</em></p>
+<h4 id="安装C-运行库"><a href="#安装C-运行库" class="headerlink" title="安装C++运行库"></a>安装C++运行库</h4><p>这一步需要有图形界面的操作，你可以在linux服务器上安装图形界面并使用vnc进行下面的操作，也可以使用xshell+xmanager的方式来安装,推荐使用后者(不需要额外安装图形界面)。</p>
+<p>在服务器上执行(vnc图形界面中执行或者xshell中执行)</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget https://download.visualstudio.microsoft.com/download/pr/8c211be1-c537-4402-82e7-a8fb5ee05e8a/B6C82087A2C443DB859FDBEAAE7F46244D06C3F2A7F71C35E50358066253DE52/VC_redist.x64.exe</span><br><span class="line">wine VC_redist.x64.exe</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://haojie-storage.oss-cn-shenzhen.aliyuncs.com/image/2020/04/0703.png" alt="首次运行wine的时候会让你装一些扩展，装不装都可以"></p>
+<p><img src="https://haojie-storage.oss-cn-shenzhen.aliyuncs.com/image/2020/04/0704.png" alt="xmanager的效果"></p>
+<h3 id="开始运行bdx"><a href="#开始运行bdx" class="headerlink" title="开始运行bdx"></a>开始运行bdx</h3><p>将之前的bdx压缩包上传到服务器上并解压后，进到bdx文件夹中，使用<code>wine bedrock_server.exe</code>即可开启bdx服务端了。</p>
+<p>如果觉得大量的DEBUG信息太碍眼的话可以使用<code>export WINEDEBUG=-all</code>隐藏DEBUG信息输出。</p>
+<p><img src="https://haojie-storage.oss-cn-shenzhen.aliyuncs.com/image/2020/04/0604.png" alt=""></p>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><ul>
+<li><a href="http://ubuntuhandbook.org/index.php/2020/01/install-wine-5-0-stable-ubuntu-18-04-19-10/">安装wine5.0</a></li>
+<li><a href="https://www.jianshu.com/p/e1ccd0f96fd6">windows运行bdx</a></li>
+<li><a href="https://github.com/Sysca11/BedrockX-bin/blob/master/guide.txt">bdx项目的介绍</a></li>
+</ul>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-6914153309632048"
+     data-ad-slot="6612533591"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div><ul class="post-copyright"><li><strong>本文标题：</strong><a href="https://notesail.com/posts/linux-bedrockx.html">在Linux上运行bdx(BedrockX)开设基岩版MC插件服</a></li><li><strong>本文作者：</strong><a href="https://notesail.com">haojie06</a></li><li><strong>本文链接：</strong><a href="https://notesail.com/posts/linux-bedrockx.html">https://notesail.com/posts/linux-bedrockx.html</a></li><li><strong>版权声明：</strong><span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</span></li></ul><div><div class="recommend-post"><span class="is-size-6 has-text-grey has-mr-7"># 相关文章</span><br><span>  1.<a class="is-size-6" href="/posts/valine-admin.html" target="_blank">hexo使用valine评论并支持邮件通知</a><br></span><span>  2.<a class="is-size-6" href="/posts/chevereto-imgbed.html" target="_blank">使用Chevereto自建图床</a><br></span><span>  3.<a class="is-size-6" href="/posts/setup-typecho.html" target="_blank">ubuntu手动安装lnmp+Typecho</a><br></span><span>  4.<a class="is-size-6" href="/posts/cloudflare-custom.html" target="_blank">cloudflare自定义节点 加速访问</a><br></span><span>  5.<a class="is-size-6" href="/posts/hexo-deploy-pages.html" target="_blank">hexo部署到coding page以及zeit.co</a><br></span><span>  6.<a class="is-size-6" href="/posts/bdl-plugins-guide.html" target="_blank">如何使用bdl插件</a><br></span></div><div class="recommend-post"><span class="is-size-6 has-text-grey has-mr-7"># 推荐文章</span><br><span>  1.<a class="is-size-6" href="/posts/linux-bedrockx.html" target="_blank">在Linux上运行bdx(BedrockX)开设基岩版MC插件服</a><br></span><span>  2.<a class="is-size-6" href="/posts/macvlan-host.html" target="_blank">macvlan模式容器与宿主机通信</a><br></span><span>  3.<a class="is-size-6" href="/posts/setup-typecho.html" target="_blank">ubuntu手动安装lnmp+Typecho</a><br></span><span>  4.<a class="is-size-6" href="/posts/cloudflare-custom.html" target="_blank">cloudflare自定义节点 加速访问</a><br></span></div></div><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/social-share.js/1.0.16/css/share.min.css"><div class="social-share"></div><script src="https://cdnjs.loli.net/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3><div class="buttons is-centered"><a class="button is-info donate"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>支付宝</span><span class="qrcode"><img src="https://i.loli.net/2020/03/11/kxPRDrJqCpIFHYU.png" alt="支付宝"></span></a><a class="button is-success donate"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>微信</span><span class="qrcode"><img src="https://i.loli.net/2020/03/11/ZkY7Ud2oMNyW6VT.png" alt="微信"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/posts/kvm-bridge.html"><i class="level-item fas fa-chevron-left"></i><span class="level-item">kvm单网卡桥接模式</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/posts/chevereto-imgbed.html"><span class="level-item">使用Chevereto自建图床</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card widget"><div class="g-ads-x"><div class="card-content"><h3 class="menu-label">温馨提示！此处可能会出现广告！</h3><br><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-6914153309632048" data-ad-slot="8728493258"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div></div><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div class="content" id="comment-container"></div><script>var valine = new Valine({
+            el: '#comment-container' ,
+            notify: true,
+            verify: true,
+            appId: '0XGij6tLgXUrIo3pGPRhRMeF-MdYXbMMI',
+            appKey: 'b3aUsbf5wslfBJ8ksUxAfnpB',
+            placeholder: '留下你的评论吧！留下邮箱和名字就可以接收邮件通知了，不过不要乱填哦。',
+            avatar: 'identicon',
+            avatarForce: false,
+            meta: ["nick","mail","link"],
+            pageSize: 10,
+            visitor: false,
+            highlight: true,
+            recordIP: false,
+            path:'/posts/linux-bedrockx.html'
+        });</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1 is-sticky"><div class="card widget toc-scroll" id="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="is-flex" id="toc-item-BedrockX-开设基岩版插件服" href="#BedrockX-开设基岩版插件服"><span>BedrockX 开设基岩版插件服</span></a><ul class="menu-list"><li><a class="is-flex" id="toc-item-在windows上生成服务端程序" href="#在windows上生成服务端程序"><span>在windows上生成服务端程序</span></a></li><li><a class="is-flex" id="toc-item-安装wine5-0" href="#安装wine5-0"><span>安装wine5.0</span></a><ul class="menu-list"><li><a class="is-flex" id="toc-item-安装C-运行库" href="#安装C-运行库"><span>安装C++运行库</span></a></li></ul></li><li><a class="is-flex" id="toc-item-开始运行bdx" href="#开始运行bdx"><span>开始运行bdx</span></a></li><li><a class="is-flex" id="toc-item-参考" href="#参考"><span>参考</span></a></li></ul></li></ul></div></div><script type="text/javascript" async>
+        $(document).ready(function () { //参考自 https://github.com/ppoffice/hexo-theme-icarus/pull/616/files
+            var observerTopMargin;
+            var scrollObserver;
+            var headerElems = $(".headerlink");
+            var activeTocItem;
+        
+            function initIntersectionObserver(docHeight) {
+                observerTopMargin = docHeight;
+                scrollObserver = new IntersectionObserver(scrollCallBack,
+                    {
+                        root: null,  // viewpoint
+                        rootMargin: docHeight + "px 0px -80% 0px"  // cover top 30% of viewport to the top of document
+                    })
+            }
+        
+            function scrollCallBack(entries, observer) {
+                if ($(window).scrollTop() > observerTopMargin * 0.7) { 
+                    // User somehow scroll to 70% of observerTopMargin (which is inited as 200% document height)
+                    // Observer top margin need to extend to cover all the space to the top of the document
+                    initIntersectionObserver(observerTopMargin * 2)
+                    observer.disconnect();
+                    return;
+                }
+                let toActive;
+                if (entries[0].intersectionRatio == 1) {  // enter viewed area
+                    let entry = entries.reduce((u, v) => (u.target.toc_id > v.target.toc_id ? u : v));  // get the lowest item
+                    toActive = $("#toc-item-" + $(entry.target).attr("href").substr(1));
+                } else {
+                    let entry = entries.reduce((u, v) => (u.target.toc_id < v.target.toc_id ? u : v));  // get the highest item
+                    let idx = Math.max(entry.target.toc_id - 1, 0);
+                    toActive = $("#toc-item-" + $(headerElems[idx]).attr("href").substr(1));
+                }
+                if (activeTocItem) activeTocItem.removeClass("is-current");
+                activeTocItem = toActive
+                activeTocItem.addClass("is-current");
+            }
+        
+            initIntersectionObserver($(document).height() * 2);
+            headerElems.each(function (index, obj) {
+                obj.toc_id = index;
+                scrollObserver.observe(obj);
+            })
+        });</script></div><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="" src="https://cdn.jsdelivr.net/gh/haojie06/imgStorage/imgs/2020/04/0642.png" alt="帆笔记"></figure><p class="title is-size-4 is-block line-height-inherit">帆笔记</p><p class="is-size-6 is-block">轻帆远航</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>PRC</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">21</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">6</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">26</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/haojie06" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-white is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/haojie06"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-white is-marginless" target="_blank" rel="noopener" title="Telegram" href="https://t.me/ajie06"><i class="fab fa-telegram-plane"></i></a><a class="level-item button is-transparent is-white is-marginless" target="_blank" rel="noopener" title="Email" href="mailto:whaojie06@gmail.com"><i class="fa fa-envelope"></i></a><a class="level-item button is-transparent is-white is-marginless" target="_blank" rel="noopener" title="RSS" href="/atom.xml"><i class="fas fa-rss"></i></a></div><div><hr><p id="hitokoto">:D 一言句子获取中...</p><script type="text/javascript" defer>function getYiyan(){
+                                $.getJSON("https://v1.hitokoto.cn/?c=i", function (data) {
+                                if(data){
+                                    $('#hitokoto').html("");
+                                    $('#hitokoto').append("<strong style='color: #3273dc;'>"+data.hitokoto+"</strong>"+
+                                    "<p>"+"来源《"+data.from+"》");
+                                }});}
+                                $(function (){getYiyan();$('#hitokoto').click(function(){getYiyan();})});</script></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">最新评论</h3><span class="body_hot_comment">加载中，最新评论有1分钟缓存...</span></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><a class="media-left" href="/posts/hello-hexo.html"><p class="image is-64x64"><img class="thumbnail" src="https://haojie-storage.oss-cn-shenzhen.aliyuncs.com/image/2020/03/1242.png" alt="Hello Hexo"></p></a><div class="media-content size-small"><p><time dateTime="2020-05-07T04:02:01.509Z">2020-05-07</time></p><p class="title is-6"><a class="link-muted" href="/posts/hello-hexo.html">Hello Hexo</a></p><p class="is-uppercase"></p></div></article><article class="media"><a class="media-left" href="/posts/valine-admin.html"><p class="image is-64x64"><img class="thumbnail" src="https://haojie-storage.oss-cn-shenzhen.aliyuncs.com/image/2020/04/0845.png" alt="hexo使用valine评论并支持邮件通知"></p></a><div class="media-content size-small"><p><time dateTime="2020-04-16T12:01:56.000Z">2020-04-16</time></p><p class="title is-6"><a class="link-muted" href="/posts/valine-admin.html">hexo使用valine评论并支持邮件通知</a></p><p class="is-uppercase"><i class="fas fa-folder-open has-text-grey"> </i><a class="link-muted" href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a> / <a class="link-muted" href="/categories/%E6%9D%82%E8%B0%88/%E5%88%86%E4%BA%AB/">分享</a></p></div></article><article class="media"><a class="media-left" href="/posts/cloudflare-realip.html"><p class="image is-64x64"><img class="thumbnail" src="https://haojie-storage.oss-cn-shenzhen.aliyuncs.com/image/2020/04/1219.png" alt="nginx访问日志记录cloudflare后真实ip"></p></a><div class="media-content size-small"><p><time dateTime="2020-04-11T16:11:37.000Z">2020-04-12</time></p><p class="title is-6"><a class="link-muted" href="/posts/cloudflare-realip.html">nginx访问日志记录cloudflare后真实ip</a></p><p class="is-uppercase"><i class="fas fa-folder-open has-text-grey"> </i><a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a> / <a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/">实践</a></p></div></article><article class="media"><a class="media-left" href="/posts/linux-manage-windows.html"><p class="image is-64x64"><img class="thumbnail" src="https://cdn.jsdelivr.net/gh/haojie06/imgStorage/imgs/2020/04/1221.png" alt="Linux下管理Windows"></p></a><div class="media-content size-small"><p><time dateTime="2020-04-07T03:55:50.000Z">2020-04-07</time></p><p class="title is-6"><a class="link-muted" href="/posts/linux-manage-windows.html">Linux下管理Windows</a></p><p class="is-uppercase"><i class="fas fa-folder-open has-text-grey"> </i><a class="link-muted" href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a> / <a class="link-muted" href="/categories/%E6%9D%82%E8%B0%88/%E6%8A%98%E8%85%BE/">折腾</a></p></div></article><article class="media"><a class="media-left" href="/posts/kvm-bridge.html"><p class="image is-64x64"><img class="thumbnail" src="https://cdn.jsdelivr.net/gh/haojie06/imgStorage/imgs/2020/04/1126.png" alt="kvm单网卡桥接模式"></p></a><div class="media-content size-small"><p><time dateTime="2020-04-07T02:45:33.000Z">2020-04-07</time></p><p class="title is-6"><a class="link-muted" href="/posts/kvm-bridge.html">kvm单网卡桥接模式</a></p><p class="is-uppercase"><i class="fas fa-folder-open has-text-grey"> </i><a class="link-muted" href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a> / <a class="link-muted" href="/categories/%E6%9D%82%E8%B0%88/%E6%8A%98%E8%85%BE/">折腾</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">网站访客</h3><script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5jdf0azne8l&amp;amp;m=0&amp;amp;c=ff0000&amp;amp;cr1=ffffff&amp;amp;f=arial&amp;amp;l=33" async="async"></script></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/%E6%8A%80%E6%9C%AF/"><span class="level-start"><span class="level-item">技术</span></span><span class="level-end"><span class="level-item tag">7</span></span></a><ul class="mr-0"><li><a class="level is-mobile is-marginless" href="/categories/%E6%8A%80%E6%9C%AF/%E5%AD%A6%E4%B9%A0/"><span class="level-start"><span class="level-item">学习</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"><span class="level-start"><span class="level-item">实践</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li></ul></li><li><a class="level is-mobile is-marginless" href="/categories/%E6%9D%82%E8%B0%88/"><span class="level-start"><span class="level-item">杂谈</span></span><span class="level-end"><span class="level-item tag">13</span></span></a><ul class="mr-0"><li><a class="level is-mobile is-marginless" href="/categories/%E6%9D%82%E8%B0%88/%E5%88%86%E4%BA%AB/"><span class="level-start"><span class="level-item">分享</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%E6%9D%82%E8%B0%88/%E6%8A%98%E8%85%BE/"><span class="level-start"><span class="level-item">折腾</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li></ul></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/%E5%BB%BA%E7%AB%99/"><span class="tag">建站</span><span class="tag is-grey-lightest">6</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Minecraft/"><span class="tag">Minecraft</span><span class="tag is-grey-lightest">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/docker/"><span class="tag">docker</span><span class="tag is-grey-lightest">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/"><span class="tag">Minecraft服务器</span><span class="tag is-grey-lightest">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/nodejs/"><span class="tag">nodejs</span><span class="tag is-grey-lightest">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%BC%96%E7%A8%8B/"><span class="tag">编程</span><span class="tag is-grey-lightest">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%8A%98%E8%85%BE/"><span class="tag">折腾</span><span class="tag is-grey-lightest">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"><span class="tag">虚拟机</span><span class="tag is-grey-lightest">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%8D%9A%E5%AE%A2/"><span class="tag">博客</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/kvm/"><span class="tag">kvm</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/nginx/"><span class="tag">nginx</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/javascript/"><span class="tag">javascript</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/typecho/"><span class="tag">typecho</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/hexo/"><span class="tag">hexo</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/wordpress/"><span class="tag">wordpress</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%88%86%E4%BA%AB/"><span class="tag">分享</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%89%8D%E7%AB%AF/"><span class="tag">前端</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/metasploit/"><span class="tag">metasploit</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/docker%E7%BD%91%E7%BB%9C/"><span class="tag">docker网络</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"><span class="tag">微信小程序</span><span class="tag is-grey-lightest">1</span></a></div></div><div class="field is-grouped is-grouped-multiline"><a class="tags has-addons" href="/tags/"><span class="tag">查看全部&gt;&gt;</span></a></div></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2020/05/"><span class="level-start"><span class="level-item">五月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/04/"><span class="level-start"><span class="level-item">四月 2020</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/03/"><span class="level-start"><span class="level-item">三月 2020</span></span><span class="level-end"><span class="level-item tag">15</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">订阅更新</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=notesail&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="notesail" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button is-primary" type="submit" value="订阅"></div></div><p class="help">输入邮箱开始订阅，更博后邮件通知！</p></form></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">广告</h3><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6914153309632048" data-ad-slot="4958722911" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">广告</h3><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6914153309632048" data-ad-slot="4958722911" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.png" alt="帆笔记" height="28"></a><p class="size-small"><span>&copy; 2020 haojie06</span>  Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>,Modify by <a href="https://github.com/removeif/hexo-theme-amazing" target="_blank">removeif</a> <br><span>© 版权说明：[本网站所有内容均收集于互联网或自己创作,<br />&nbsp;&nbsp;&nbsp;&nbsp;方便于网友与自己学习交流，如有侵权，请<a href="/message" target="_blank">留言</a>，立即处理]<br /></span><span><span id="statistic-times">loading...</span><script>function createTime(time) {
+            var n = new Date(time);
+            now.setTime(now.getTime() + 250),
+                days = (now - n) / 1e3 / 60 / 60 / 24,
+                dnum = Math.floor(days),
+                hours = (now - n) / 1e3 / 60 / 60 - 24 * dnum,
+                hnum = Math.floor(hours),
+            1 == String(hnum).length && (hnum = "0" + hnum),
+                minutes = (now - n) / 1e3 / 60 - 1440 * dnum - 60 * hnum,
+                mnum = Math.floor(minutes),
+            1 == String(mnum).length && (mnum = "0" + mnum),
+                seconds = (now - n) / 1e3 - 86400 * dnum - 3600 * hnum - 60 * mnum,
+                snum = Math.round(seconds),
+            1 == String(snum).length && (snum = "0" + snum),
+                document.getElementById("statistic-times").innerHTML = "❤️本站自 <strong>"+time.split(" ")[0].replace(/\//g,".")+"</strong> 已运行 <strong>" + dnum + "</strong> 天 <strong>" + hnum + "</strong> 小时 <strong>" + mnum + "</strong> 分 <strong>" + snum + "</strong> 秒！❤️";
+        }var now = new Date();setInterval("createTime('2020/3/10 00:00:00')", 250,"");</script><br></span><div class="size-small"><span>❤️感谢 <strong><span id="busuanzi_value_site_uv">99+</span></strong> 小伙伴的 <strong><span id="busuanzi_value_site_pv">99+</span></strong> 次光临！❤️</span></div></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/haojie06"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdnjs.loli.net/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            site: {
+                url: 'https://notesail.com',
+                external_link: {"enable":true,"exclude":[]}
+            },
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="https://cdnjs.loli.net/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" defer></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back-to-top.js" defer></script><!--!--><!--!--><script src="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.12/js/lightgallery-all.min.js" defer></script><script src="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js" defer></script><!--!--><!--!--><!--!--><script src="/js/toc.js" defer></script><script src="/js/main.js" defer></script><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="https://cdnjs.loli.net/ajax/libs/valine/1.4.4/Valine.min.js"></script><script src="/js/md5.min.js"></script><script>$.getScript('/js/comment-issue-data.js',function(){loadIssueData('0XGij6tLgXUrIo3pGPRhRMeF-MdYXbMMI','b3aUsbf5wslfBJ8ksUxAfnpB','sailor','undefined',true);})</script><link rel="stylesheet" href="/css/insight.css"><div class="searchbox ins-search"><div class="searchbox-container ins-search-container"><div class="searchbox-input-wrapper"><input class="searchbox-input ins-search-input" type="text" placeholder="想要查找什么..."><span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span></div><div class="searchbox-result-wrapper ins-section-wrapper"><div class="ins-section-container"></div></div></div></div><script>(function (window) {
+            var INSIGHT_CONFIG = {
+                TRANSLATION: {
+                    POSTS: '文章',
+                    PAGES: '页面',
+                    CATEGORIES: '分类',
+                    TAGS: '标签',
+                    UNTITLED: '(无标题)',
+                },
+                CONTENT_URL: '/content.json',
+            };
+            window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+        })(window);</script><script src="/js/insight.js" defer></script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.js"></script><script type="text/javascript">var pjax = new Pjax({
+            elements: "a",//代表点击链接就更新
+            selectors: [  //代表要更新的节点
+                ".section",
+                "title"
+            ],
+            cache: true,
+            cacheBust:false
+        })
+
+        function loadBusuanzi(){
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js", function () {});
+        }
+
+        // 开始 PJAX 执行的函数
+        document.addEventListener('pjax:send', function () {
+        });
+        
+        // PJAX 完成之后执行的函数，可以和上面的重载放在一起
+        document.addEventListener('pjax:complete', function () {
+            $(".section").css({opacity:1});
+            if(true){
+                $.getScript('/js/comment-issue-data.js',function(){loadIssueData('0XGij6tLgXUrIo3pGPRhRMeF-MdYXbMMI','b3aUsbf5wslfBJ8ksUxAfnpB','sailor','undefined',true);});
+            }
+            if(false){
+                loadMathJax();
+            }
+            loadMainJs(jQuery, window.moment, window.ClipboardJS, window.IcarusThemeSettings);
+            loadBackTop();
+            loadBusuanzi();
+            if(typeof loadBanner == 'function'){
+                loadBanner();
+            }
+        });</script></body></html>
