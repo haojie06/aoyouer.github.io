@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://notesail.com/"/>
-  <updated>2020-05-07T09:12:32.379Z</updated>
+  <updated>2020-05-07T09:14:26.167Z</updated>
   <id>https://notesail.com/</id>
   
   <author>
@@ -21,11 +21,11 @@
     <link href="https://notesail.com/posts/hexo-multi-sites.html"/>
     <id>https://notesail.com/posts/hexo-multi-sites.html</id>
     <published>2020-05-07T05:02:35.000Z</published>
-    <updated>2020-05-07T09:12:32.379Z</updated>
+    <updated>2020-05-07T09:14:26.167Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;一台电脑多个hexo的部署方式&quot;&gt;&lt;a href=&quot;#一台电脑多个hexo的部署方式&quot; class=&quot;headerlink&quot; title=&quot;一台电脑多个hexo的部署方式&quot;&gt;&lt;/a&gt;一台电脑多个hexo的部署方式&lt;/h2&gt;&lt;blockquote&gt;
+      &lt;h2 id=&quot;一台电脑多个hexo站点的部署方法&quot;&gt;&lt;a href=&quot;#一台电脑多个hexo站点的部署方法&quot; class=&quot;headerlink&quot; title=&quot;一台电脑多个hexo站点的部署方法&quot;&gt;&lt;/a&gt;一台电脑多个hexo站点的部署方法&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;本文主要内容转载自 &lt;a href=&quot;https://www.sugen.cn/article-20190622.html&quot;&gt;https://www.sugen.cn/article-20190622.html&lt;/a&gt; &lt;/p&gt;
 &lt;p&gt;我使用的系统是 Ubuntu 20.04&lt;/p&gt;
 &lt;/blockquote&gt;
