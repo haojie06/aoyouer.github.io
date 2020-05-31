@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://notesail.com/posts/docker-wine-env.html</loc>
+    
+    <lastmod>2020-05-31T07:03:31.398Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://notesail.com/finemc/index.html</loc>
     
     <lastmod>2020-05-20T14:16:15.981Z</lastmod>
@@ -44,14 +51,14 @@
   </url>
   
   <url>
-    <loc>https://notesail.com/search/index.html</loc>
+    <loc>https://notesail.com/search/baidu_verify_IGKO7AfLHO.html</loc>
     
     <lastmod>2020-05-07T04:02:01.957Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://notesail.com/search/baidu_verify_IGKO7AfLHO.html</loc>
+    <loc>https://notesail.com/search/index.html</loc>
     
     <lastmod>2020-05-07T04:02:01.957Z</lastmod>
     

@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>docker与wine环境配置</title>
+      <link href="/posts/docker-wine-env.html"/>
+      <url>/posts/docker-wine-env.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="docker与wine环境配置"><a href="#docker与wine环境配置" class="headerlink" title="docker与wine环境配置"></a>docker与wine环境配置</h1><blockquote><p> 因为最近感觉家里的nuc有点过于闲置了，浪费了性能，所以想着充分利用起多余的性能出租几个面板服赚点域名/vps钱，一开始只开了Minecraft基岩版服务器，不过想着最近泰拉瑞亚玩的人也挺多的，所以不如再开一个泰拉瑞亚的面板服，现在查看官网<a href="https://terraria.org/发现居然有了手机版的[专用服务端](https://terraria.org/server/MobileTerrariaServer.zip)了（上次看的时候还没有的来着），不过服务端写着">https://terraria.org/发现居然有了手机版的[专用服务端](https://terraria.org/server/MobileTerrariaServer.zip)了（上次看的时候还没有的来着），不过服务端写着</a> <a href="https://terraria.org/server/MobileTerrariaServer.zip">Mobile Dedicated Server for Windows</a> ，只有Windows能用吗…虽然我也运行了一个Windows server的虚拟机，但是由于面板运行在Linux上，所以能够直接在Linux上运行该服务端就更好了，所以想到能不能用wine来运行该服务端呢？</p></blockquote><p>折腾了半天，也没有成功，wine一直无法安装上dotnet与xna运行环境，暂时搁置，这篇文章暂时记录一下docker和wine环境的配置。</p><h2 id="创建ubuntu-docker"><a href="#创建ubuntu-docker" class="headerlink" title="创建ubuntu docker"></a>创建ubuntu docker</h2><p>为了安全起见(面板中运行的东西不会破坏到宿主机)以及便于迁移/删除，我觉得使用docker来运行。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker pull ubuntu</span><br><span class="line">docker run -itd --name ubuntu ubuntu</span><br><span class="line">docker exec -it ubuntu &#x2F;bin&#x2F;bash</span><br></pre></td></tr></table></figure><h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2><h3 id="安装wine"><a href="#安装wine" class="headerlink" title="安装wine"></a>安装wine</h3><p>我的系统是Ubuntu20.04，<del>安装的wine版本是wine5.0</del>，不过在首次执行<code>wine TerrariaServer.exe</code>会提示需要使用wine32运行，而默认安装的是win64，只需要按照它提示的命令安装wine32即可。</p><p><strong>注意，之前我是从apt源中安装的wine但是出了很多错误,比如缺少wine-mono之类的，直接安装也会出错，之后我改用从官网的源里面安装wine</strong></p><p>查看winehq官网 <a href="https://wiki.winehq.org/Ubuntu_zhcn">https://wiki.winehq.org/Ubuntu_zhcn</a></p><blockquote><h4 id="如果您之前使用过来自发行版自己打包的安装包，您会发现它们和-WineHQ-提供的有以下不同："><a href="#如果您之前使用过来自发行版自己打包的安装包，您会发现它们和-WineHQ-提供的有以下不同：" class="headerlink" title="如果您之前使用过来自发行版自己打包的安装包，您会发现它们和 WineHQ 提供的有以下不同："></a>如果您之前使用过来自发行版自己打包的安装包，您会发现它们和 WineHQ 提供的有以下不同：</h4><ul><li><p>文件被安装在 /opt/wine-devel 或 /opt/wine-staging。</p></li><li><p>没有为 Wine 的内置程序（winecfg 等等）创建菜单项，并且如果您是从发行版自己打包的安装包升级上来的，原来的菜单项也会被删除。您可以使用菜单编辑器自己再次创建。</p></li><li><p>没有添加 Binfmt_misc 注册项。如果您想手动添加，请查看您使用的发行版关于 <a href="http://manpages.ubuntu.com/manpages/jaunty/man8/update-binfmts.8.html">update-binfmts</a> 的文档。</p></li><li><p>WineHQ 当前没有提供 wine-gecko 和 wine-moon 的安装包。所以当创建新的 wine 配置目录时，您将会被询问是否下载这些组建。为了得到更好的兼容性，我们建议您选择“安装”。如果下载过程发生出错，请查看 <a href="http://wiki.winehq.org/Gecko">Gecko</a> 和 <a href="http://wiki.winehq.org/Mono">Mono</a> 的 wiki 页面来进行手动安装。</p></li><li><p>从 Wine 5.7 开始，WineHQ 的 Ubuntu 安装包有一个 debconf 选项用于开启 CAP_NET_RAW 以兼容需要发送和接收 raw IP 包的应用程序。由于具有潜在的安全风险，并且大多数应用程序不需要该功能，该功能默认被关闭。需要该功能运行应用程序的用户可以在安装 Wine 之后运行</p></li></ul></blockquote><p>使用官方的方法</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo dpkg --add-architecture i386</span><br><span class="line">wget -O - https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key add -</span><br><span class="line">sudo add-apt-repository <span class="string">'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'</span></span><br><span class="line"><span class="comment"># 由于wine下载实在是太慢了，所以最好使用代理，请注意下面这样写才能生效</span></span><br><span class="line">sudo apt install -o Acquire::http::proxy=<span class="string">"socks5h://192.168.0.2:1081"</span> --install-recommends winehq-stable</span><br></pre></td></tr></table></figure><p>使用该方法安装的wine版本是4.0.4。<strong>实测当前ubuntu20.04安装devel分支的话无法启动。</strong></p><p>由于直接启动的话安装mono和gecko环境过于缓慢,所以我采取了手动下载对应的wine-mono 以及gecko的方法。</p><p>在/opt/wine-stable/share路径下分别新建 mono文件夹和gecko文件夹，并从中科大的镜像<a href="http://mirrors.ustc.edu.cn/wine/wine下载这两个对应的依赖放到文件夹中，再次启动就不会卡在下载了。">http://mirrors.ustc.edu.cn/wine/wine下载这两个对应的依赖放到文件夹中，再次启动就不会卡在下载了。</a></p><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://www.dedoimedo.com/computers/wine-dotnet-mono.html">https://www.dedoimedo.com/computers/wine-dotnet-mono.html</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂谈 </category>
+          
+          <category> 折腾 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> docker </tag>
+            
+            <tag> wine </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>一台电脑多个hexo站点的配置</title>
       <link href="/posts/hexo-multi-sites.html"/>
       <url>/posts/hexo-multi-sites.html</url>
