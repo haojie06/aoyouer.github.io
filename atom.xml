@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://notesail.com/"/>
-  <updated>2020-05-31T07:03:31.398Z</updated>
+  <updated>2020-06-16T17:08:40.664Z</updated>
   <id>https://notesail.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>docker中无法使用systemctl</title>
+    <link href="https://notesail.com/posts/docker-systemctl.html"/>
+    <id>https://notesail.com/posts/docker-systemctl.html</id>
+    <published>2020-06-16T17:06:51.000Z</published>
+    <updated>2020-06-16T17:08:40.664Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Ubuntu-docker中无法使用systemctl&quot;&gt;&lt;a href=&quot;#Ubuntu-docker中无法使用systemctl&quot; class=&quot;headerlink&quot; title=&quot;Ubuntu docker中无法使用systemctl&quot;&gt;&lt;/a&gt;Ubuntu docker中无法使用systemctl&lt;/h2&gt;&lt;p&gt;当我在系统为Ubuntu18.04的服务器上尝试pull一个ubuntu或者debian的容器并运行的时候，在容器中尝试使用 &lt;code&gt;systemctl&lt;/code&gt;命令，结果出现了&lt;strong&gt;System has not been booted with systemd as init system (PID 1). Can’t operat&lt;/strong&gt;的报错，意思是init的进程号为1的进程（其实init根本没运行）。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="实践" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
+    
+    
+      <category term="docker" scheme="https://notesail.com/tags/docker/"/>
+    
+  </entry>
   
   <entry>
     <title>docker与wine环境配置</title>
@@ -419,6 +442,23 @@
   </entry>
   
   <entry>
+    <title>Hello Hexo</title>
+    <link href="https://notesail.com/posts/hello-hexo.html"/>
+    <id>https://notesail.com/posts/hello-hexo.html</id>
+    <published>2020-03-12T04:27:29.000Z</published>
+    <updated>2020-05-07T09:43:58.946Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;我的hexo使用笔记-不定期更新&quot;&gt;&lt;a href=&quot;#我的hexo使用笔记-不定期更新&quot; class=&quot;headerlink&quot; title=&quot;我的hexo使用笔记(不定期更新)&quot;&gt;&lt;/a&gt;我的hexo使用笔记(不定期更新)&lt;/h1&gt;&lt;h2 id=&quot;主题&quot;&gt;&lt;a href=&quot;#主题&quot; class=&quot;headerlink&quot; title=&quot;主题&quot;&gt;&lt;/a&gt;主题&lt;/h2&gt;&lt;p&gt;主题使用了removeif修改后的icarus，之前看到了icarus就很喜欢它的设计，但是总有一些不太尽如人意的地方，自己又没有特别多的时间去一一修改，当看到removeif修改后的icarus(amazing)主题，只感觉到相见恨晚。&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>docker图片中文显示乱码/显示方块解决方法</title>
     <link href="https://notesail.com/posts/docker-chinese-support.html"/>
     <id>https://notesail.com/posts/docker-chinese-support.html</id>
@@ -440,23 +480,6 @@
       <category term="docker" scheme="https://notesail.com/tags/docker/"/>
     
       <category term="bugs" scheme="https://notesail.com/tags/bugs/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello Hexo</title>
-    <link href="https://notesail.com/posts/hello-hexo.html"/>
-    <id>https://notesail.com/posts/hello-hexo.html</id>
-    <published>2020-03-12T04:27:29.000Z</published>
-    <updated>2020-05-07T09:43:58.946Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;我的hexo使用笔记-不定期更新&quot;&gt;&lt;a href=&quot;#我的hexo使用笔记-不定期更新&quot; class=&quot;headerlink&quot; title=&quot;我的hexo使用笔记(不定期更新)&quot;&gt;&lt;/a&gt;我的hexo使用笔记(不定期更新)&lt;/h1&gt;&lt;h2 id=&quot;主题&quot;&gt;&lt;a href=&quot;#主题&quot; class=&quot;headerlink&quot; title=&quot;主题&quot;&gt;&lt;/a&gt;主题&lt;/h2&gt;&lt;p&gt;主题使用了removeif修改后的icarus，之前看到了icarus就很喜欢它的设计，但是总有一些不太尽如人意的地方，自己又没有特别多的时间去一一修改，当看到removeif修改后的icarus(amazing)主题，只感觉到相见恨晚。&lt;/p&gt;
-    
-    </summary>
-    
-    
     
   </entry>
   
