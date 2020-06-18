@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://notesail.com/"/>
-  <updated>2020-06-17T08:02:49.479Z</updated>
+  <updated>2020-06-18T10:15:53.344Z</updated>
   <id>https://notesail.com/</id>
   
   <author>
@@ -17,15 +17,15 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>菜鸟论坛后端开发记录</title>
-    <link href="https://notesail.com/posts/noob-bbs-server.html"/>
-    <id>https://notesail.com/posts/noob-bbs-server.html</id>
+    <title>菜鸟论坛后端开发记录(一)</title>
+    <link href="https://notesail.com/posts/noob-bbs-server-1.html"/>
+    <id>https://notesail.com/posts/noob-bbs-server-1.html</id>
     <published>2020-06-17T03:32:16.000Z</published>
-    <updated>2020-06-17T08:02:49.479Z</updated>
+    <updated>2020-06-18T10:15:53.344Z</updated>
     
     <summary type="html">
     
-      记录了菜鸟论坛后端部分开发的一些知识点，分享给同组的后端组员看
+      菜鸟论坛后端的开发记录的第一篇文章，记录了项目使用spring boot起步以及使用jpa访问数据库，并实现了一个Demo。
     
     </summary>
     
@@ -36,6 +36,41 @@
     
     
       <category term="java" scheme="https://notesail.com/tags/java/"/>
+    
+      <category term="jpa" scheme="https://notesail.com/tags/jpa/"/>
+    
+      <category term="spring boot" scheme="https://notesail.com/tags/spring-boot/"/>
+    
+      <category term="专业实训" scheme="https://notesail.com/tags/%E4%B8%93%E4%B8%9A%E5%AE%9E%E8%AE%AD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>菜鸟论坛后端开发记录(一)</title>
+    <link href="https://notesail.com/posts/noob-bbs-server-1.html"/>
+    <id>https://notesail.com/posts/noob-bbs-server-1.html</id>
+    <published>2020-06-17T03:32:16.000Z</published>
+    <updated>2020-06-18T10:15:30.191Z</updated>
+    
+    <summary type="html">
+    
+      菜鸟论坛后端的开发记录的第一篇文章，记录了项目使用spring boot起步以及使用jpa访问数据库，并实现了一个Demo。
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="实践" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
+    
+    
+      <category term="java" scheme="https://notesail.com/tags/java/"/>
+    
+      <category term="jpa" scheme="https://notesail.com/tags/jpa/"/>
+    
+      <category term="spring boot" scheme="https://notesail.com/tags/spring-boot/"/>
+    
+      <category term="专业实训" scheme="https://notesail.com/tags/%E4%B8%93%E4%B8%9A%E5%AE%9E%E8%AE%AD/"/>
     
   </entry>
   
