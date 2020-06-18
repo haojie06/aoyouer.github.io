@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://notesail.com/"/>
-  <updated>2020-06-18T10:17:59.641Z</updated>
+  <updated>2020-06-18T11:19:26.501Z</updated>
   <id>https://notesail.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>菜鸟论坛后端开发记录(二)</title>
+    <link href="https://notesail.com/posts/noob-bbs-server-2.html"/>
+    <id>https://notesail.com/posts/noob-bbs-server-2.html</id>
+    <published>2020-06-18T10:19:38.000Z</published>
+    <updated>2020-06-18T11:19:26.501Z</updated>
+    
+    <summary type="html">
+    
+      在第一篇文章创建了基础项目并实现了对数据库的访问之后，本文记录了使用Shiro框架实现用户的注册、登录功能、以及用户-角色-权限管理功能、会话管理功能。
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="实践" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
+    
+    
+      <category term="java" scheme="https://notesail.com/tags/java/"/>
+    
+      <category term="专业实训" scheme="https://notesail.com/tags/%E4%B8%93%E4%B8%9A%E5%AE%9E%E8%AE%AD/"/>
+    
+      <category term="shiro" scheme="https://notesail.com/tags/shiro/"/>
+    
+  </entry>
   
   <entry>
     <title>菜鸟论坛后端开发记录(一)</title>
