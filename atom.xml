@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://notesail.com/"/>
-  <updated>2020-08-30T15:31:46.998Z</updated>
+  <updated>2020-09-01T15:55:29.776Z</updated>
   <id>https://notesail.com/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>golang-telegram机器人初探</title>
+    <link href="https://notesail.com/posts/go-first-tgbot.html"/>
+    <id>https://notesail.com/posts/go-first-tgbot.html</id>
+    <published>2020-09-01T15:09:40.000Z</published>
+    <updated>2020-09-01T15:55:29.776Z</updated>
+    
+    <summary type="html">
+    
+      用golang编写一个服务器探针机器人
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="实践" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
+    
+    
+      <category term="golang" scheme="https://notesail.com/tags/golang/"/>
+    
+      <category term="telegram" scheme="https://notesail.com/tags/telegram/"/>
+    
+  </entry>
+  
+  <entry>
     <title>菜鸟论坛后端开发记录(二)</title>
     <link href="https://notesail.com/posts/noob-bbs-server-2.html"/>
     <id>https://notesail.com/posts/noob-bbs-server-2.html</id>
     <published>2020-06-18T10:19:38.000Z</published>
-    <updated>2020-08-30T15:31:46.998Z</updated>
+    <updated>2020-08-30T15:31:46.000Z</updated>
     
     <summary type="html">
     
@@ -48,7 +73,7 @@
     <link href="https://notesail.com/posts/noob-bbs-server-1.html"/>
     <id>https://notesail.com/posts/noob-bbs-server-1.html</id>
     <published>2020-06-17T03:32:16.000Z</published>
-    <updated>2020-08-30T15:31:46.998Z</updated>
+    <updated>2020-08-30T15:31:46.000Z</updated>
     
     <summary type="html">
     
@@ -77,7 +102,7 @@
     <link href="https://notesail.com/posts/docker-systemctl.html"/>
     <id>https://notesail.com/posts/docker-systemctl.html</id>
     <published>2020-06-16T17:06:51.000Z</published>
-    <updated>2020-08-30T15:31:46.998Z</updated>
+    <updated>2020-08-30T15:31:46.000Z</updated>
     
     <summary type="html">
     
@@ -100,7 +125,7 @@
     <link href="https://notesail.com/posts/docker-wine-env.html"/>
     <id>https://notesail.com/posts/docker-wine-env.html</id>
     <published>2020-05-31T07:01:34.000Z</published>
-    <updated>2020-08-30T15:31:11.054Z</updated>
+    <updated>2020-08-30T15:31:11.000Z</updated>
     
     <summary type="html">
     
@@ -125,7 +150,7 @@
     <link href="https://notesail.com/posts/hexo-multi-sites.html"/>
     <id>https://notesail.com/posts/hexo-multi-sites.html</id>
     <published>2020-05-07T05:02:35.000Z</published>
-    <updated>2020-08-30T15:31:11.070Z</updated>
+    <updated>2020-08-30T15:31:11.000Z</updated>
     
     <summary type="html">
     
@@ -154,7 +179,7 @@
     <link href="https://notesail.com/posts/valine-admin.html"/>
     <id>https://notesail.com/posts/valine-admin.html</id>
     <published>2020-04-16T12:01:56.000Z</published>
-    <updated>2020-08-30T15:31:11.062Z</updated>
+    <updated>2020-08-30T15:31:11.000Z</updated>
     
     <summary type="html">
     
@@ -179,7 +204,7 @@
     <link href="https://notesail.com/posts/cloudflare-realip.html"/>
     <id>https://notesail.com/posts/cloudflare-realip.html</id>
     <published>2020-04-11T16:11:37.000Z</published>
-    <updated>2020-08-30T15:31:11.066Z</updated>
+    <updated>2020-08-30T15:31:11.000Z</updated>
     
     <summary type="html">
     
@@ -204,7 +229,7 @@
     <link href="https://notesail.com/posts/linux-manage-windows.html"/>
     <id>https://notesail.com/posts/linux-manage-windows.html</id>
     <published>2020-04-07T03:55:50.000Z</published>
-    <updated>2020-08-30T15:31:46.998Z</updated>
+    <updated>2020-08-30T15:31:46.000Z</updated>
     
     <summary type="html">
     
@@ -233,7 +258,7 @@
     <link href="https://notesail.com/posts/kvm-bridge.html"/>
     <id>https://notesail.com/posts/kvm-bridge.html</id>
     <published>2020-04-07T02:45:33.000Z</published>
-    <updated>2020-08-30T15:31:46.998Z</updated>
+    <updated>2020-08-30T15:31:46.000Z</updated>
     
     <summary type="html">
     
@@ -260,7 +285,7 @@
     <link href="https://notesail.com/posts/linux-bedrockx.html"/>
     <id>https://notesail.com/posts/linux-bedrockx.html</id>
     <published>2020-04-04T10:18:15.000Z</published>
-    <updated>2020-08-30T15:31:11.066Z</updated>
+    <updated>2020-08-30T15:31:11.000Z</updated>
     
     <summary type="html">
     
@@ -285,7 +310,7 @@
     <link href="https://notesail.com/posts/chevereto-imgbed.html"/>
     <id>https://notesail.com/posts/chevereto-imgbed.html</id>
     <published>2020-03-19T06:48:33.000Z</published>
-    <updated>2020-08-30T15:31:11.050Z</updated>
+    <updated>2020-08-30T15:31:11.000Z</updated>
     
     <summary type="html">
     
@@ -308,7 +333,7 @@
     <link href="https://notesail.com/posts/setup-typecho.html"/>
     <id>https://notesail.com/posts/setup-typecho.html</id>
     <published>2020-03-19T03:19:03.000Z</published>
-    <updated>2020-08-30T15:31:11.070Z</updated>
+    <updated>2020-08-30T15:31:11.000Z</updated>
     
     <summary type="html">
     
@@ -333,7 +358,7 @@
     <link href="https://notesail.com/posts/cloudflare-custom.html"/>
     <id>https://notesail.com/posts/cloudflare-custom.html</id>
     <published>2020-03-16T07:07:30.000Z</published>
-    <updated>2020-08-30T15:31:46.998Z</updated>
+    <updated>2020-08-30T15:31:46.000Z</updated>
     
     <summary type="html">
     
@@ -360,7 +385,7 @@
     <link href="https://notesail.com/posts/hexo-deploy-pages.html"/>
     <id>https://notesail.com/posts/hexo-deploy-pages.html</id>
     <published>2020-03-13T05:47:17.000Z</published>
-    <updated>2020-08-30T15:31:11.062Z</updated>
+    <updated>2020-08-30T15:31:11.000Z</updated>
     
     <summary type="html">
     
@@ -402,7 +427,7 @@
     <link href="https://notesail.com/posts/code-server.html"/>
     <id>https://notesail.com/posts/code-server.html</id>
     <published>2020-03-12T05:53:03.000Z</published>
-    <updated>2020-08-30T15:31:11.054Z</updated>
+    <updated>2020-08-30T15:31:11.000Z</updated>
     
     <summary type="html">
     
@@ -427,7 +452,7 @@
     <link href="https://notesail.com/posts/android-metasploit.html"/>
     <id>https://notesail.com/posts/android-metasploit.html</id>
     <published>2020-03-12T05:45:08.000Z</published>
-    <updated>2020-05-07T04:02:01.777Z</updated>
+    <updated>2020-05-07T04:02:01.000Z</updated>
     
     <summary type="html">
     
@@ -452,7 +477,7 @@
     <link href="https://notesail.com/posts/bdl-plugins-guide.html"/>
     <id>https://notesail.com/posts/bdl-plugins-guide.html</id>
     <published>2020-03-12T04:53:14.000Z</published>
-    <updated>2020-08-30T15:31:11.062Z</updated>
+    <updated>2020-08-30T15:31:11.000Z</updated>
     
     <summary type="html">
     
@@ -477,7 +502,7 @@
     <link href="https://notesail.com/posts/bds-packs-add.html"/>
     <id>https://notesail.com/posts/bds-packs-add.html</id>
     <published>2020-03-12T04:50:28.000Z</published>
-    <updated>2020-08-30T15:31:11.050Z</updated>
+    <updated>2020-08-30T15:31:11.000Z</updated>
     
     <summary type="html">
     
@@ -498,28 +523,11 @@
   </entry>
   
   <entry>
-    <title>Hello Hexo</title>
-    <link href="https://notesail.com/posts/hello-hexo.html"/>
-    <id>https://notesail.com/posts/hello-hexo.html</id>
-    <published>2020-03-12T04:27:29.000Z</published>
-    <updated>2020-08-30T15:31:11.062Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;我的hexo使用笔记-不定期更新&quot;&gt;&lt;a href=&quot;#我的hexo使用笔记-不定期更新&quot; class=&quot;headerlink&quot; title=&quot;我的hexo使用笔记(不定期更新)&quot;&gt;&lt;/a&gt;我的hexo使用笔记(不定期更新)&lt;/h1&gt;&lt;h2 id=&quot;主题&quot;&gt;&lt;a href=&quot;#主题&quot; class=&quot;headerlink&quot; title=&quot;主题&quot;&gt;&lt;/a&gt;主题&lt;/h2&gt;&lt;p&gt;主题使用了removeif修改后的icarus，之前看到了icarus就很喜欢它的设计，但是总有一些不太尽如人意的地方，自己又没有特别多的时间去一一修改，当看到removeif修改后的icarus(amazing)主题，只感觉到相见恨晚。&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>docker图片中文显示乱码/显示方块解决方法</title>
     <link href="https://notesail.com/posts/docker-chinese-support.html"/>
     <id>https://notesail.com/posts/docker-chinese-support.html</id>
     <published>2020-03-12T04:27:29.000Z</published>
-    <updated>2020-08-30T15:31:11.054Z</updated>
+    <updated>2020-08-30T15:31:11.000Z</updated>
     
     <summary type="html">
     
@@ -540,11 +548,28 @@
   </entry>
   
   <entry>
+    <title>Hello Hexo</title>
+    <link href="https://notesail.com/posts/hello-hexo.html"/>
+    <id>https://notesail.com/posts/hello-hexo.html</id>
+    <published>2020-03-12T04:27:29.000Z</published>
+    <updated>2020-08-30T15:31:11.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;我的hexo使用笔记-不定期更新&quot;&gt;&lt;a href=&quot;#我的hexo使用笔记-不定期更新&quot; class=&quot;headerlink&quot; title=&quot;我的hexo使用笔记(不定期更新)&quot;&gt;&lt;/a&gt;我的hexo使用笔记(不定期更新)&lt;/h1&gt;&lt;h2 id=&quot;主题&quot;&gt;&lt;a href=&quot;#主题&quot; class=&quot;headerlink&quot; title=&quot;主题&quot;&gt;&lt;/a&gt;主题&lt;/h2&gt;&lt;p&gt;主题使用了removeif修改后的icarus，之前看到了icarus就很喜欢它的设计，但是总有一些不太尽如人意的地方，自己又没有特别多的时间去一一修改，当看到removeif修改后的icarus(amazing)主题，只感觉到相见恨晚。&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>使用Babylon.js在网页上显示glb模型</title>
     <link href="https://notesail.com/posts/babylon-glb.html"/>
     <id>https://notesail.com/posts/babylon-glb.html</id>
     <published>2020-03-12T04:22:38.000Z</published>
-    <updated>2020-08-30T15:31:11.070Z</updated>
+    <updated>2020-08-30T15:31:11.000Z</updated>
     
     <summary type="html">
     
@@ -573,7 +598,7 @@
     <link href="https://notesail.com/posts/wechatapp-npm.html"/>
     <id>https://notesail.com/posts/wechatapp-npm.html</id>
     <published>2020-03-12T04:20:26.000Z</published>
-    <updated>2020-08-30T15:31:11.070Z</updated>
+    <updated>2020-08-30T15:31:11.000Z</updated>
     
     <summary type="html">
     
@@ -589,9 +614,9 @@
     
       <category term="编程" scheme="https://notesail.com/tags/%E7%BC%96%E7%A8%8B/"/>
     
-      <category term="微信小程序" scheme="https://notesail.com/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
       <category term="nodejs" scheme="https://notesail.com/tags/nodejs/"/>
+    
+      <category term="微信小程序" scheme="https://notesail.com/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
   </entry>
   
@@ -600,7 +625,7 @@
     <link href="https://notesail.com/posts/wordpress-custom-font.html"/>
     <id>https://notesail.com/posts/wordpress-custom-font.html</id>
     <published>2020-03-12T04:14:59.000Z</published>
-    <updated>2020-08-30T15:31:11.070Z</updated>
+    <updated>2020-08-30T15:31:11.000Z</updated>
     
     <summary type="html">
     
@@ -626,7 +651,7 @@
     <link href="https://notesail.com/posts/minecraft-websocket.html"/>
     <id>https://notesail.com/posts/minecraft-websocket.html</id>
     <published>2020-03-12T04:03:51.000Z</published>
-    <updated>2020-08-30T15:31:46.998Z</updated>
+    <updated>2020-08-30T15:31:46.000Z</updated>
     
     <summary type="html">
     
@@ -655,7 +680,7 @@
     <link href="https://notesail.com/posts/macvlan-host.html"/>
     <id>https://notesail.com/posts/macvlan-host.html</id>
     <published>2020-03-11T01:56:51.000Z</published>
-    <updated>2020-08-30T15:31:11.066Z</updated>
+    <updated>2020-08-30T15:31:11.000Z</updated>
     
     <summary type="html">
     
@@ -680,7 +705,7 @@
     <link href="https://notesail.com/posts/study-nodejs.html"/>
     <id>https://notesail.com/posts/study-nodejs.html</id>
     <published>2020-03-10T14:37:10.000Z</published>
-    <updated>2020-08-30T15:31:46.998Z</updated>
+    <updated>2020-08-30T15:31:46.000Z</updated>
     
     <summary type="html">
     
