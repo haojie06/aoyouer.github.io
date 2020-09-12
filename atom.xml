@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://notesail.com/"/>
-  <updated>2020-09-02T09:17:11.888Z</updated>
+  <updated>2020-09-12T10:18:53.833Z</updated>
   <id>https://notesail.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://notesail.com/posts/go-first-tgbot.html"/>
     <id>https://notesail.com/posts/go-first-tgbot.html</id>
     <published>2020-09-01T15:09:40.000Z</published>
-    <updated>2020-09-02T09:17:11.888Z</updated>
+    <updated>2020-09-12T10:18:53.833Z</updated>
     
     <summary type="html">
     
@@ -89,11 +89,11 @@
     
       <category term="java" scheme="https://notesail.com/tags/java/"/>
     
+      <category term="专业实训" scheme="https://notesail.com/tags/%E4%B8%93%E4%B8%9A%E5%AE%9E%E8%AE%AD/"/>
+    
       <category term="jpa" scheme="https://notesail.com/tags/jpa/"/>
     
       <category term="spring boot" scheme="https://notesail.com/tags/spring-boot/"/>
-    
-      <category term="专业实训" scheme="https://notesail.com/tags/%E4%B8%93%E4%B8%9A%E5%AE%9E%E8%AE%AD/"/>
     
   </entry>
   
