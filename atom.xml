@@ -5,9 +5,9 @@
   <subtitle>轻帆远航</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://notesail.com/"/>
+  <link href="https://i.notesai.com/"/>
   <updated>2020-09-12T10:18:53.833Z</updated>
-  <id>https://notesail.com/</id>
+  <id>https://i.notesai.com/</id>
   
   <author>
     <name>aoyouer</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>golang-telegram机器人初探</title>
-    <link href="https://notesail.com/posts/go-first-tgbot.html"/>
-    <id>https://notesail.com/posts/go-first-tgbot.html</id>
+    <link href="https://i.notesai.com/posts/go-first-tgbot.html"/>
+    <id>https://i.notesai.com/posts/go-first-tgbot.html</id>
     <published>2020-09-01T15:09:40.000Z</published>
     <updated>2020-09-12T10:18:53.833Z</updated>
     
@@ -30,21 +30,21 @@
     </summary>
     
     
-      <category term="技术" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://i.notesai.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="实践" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
+      <category term="实践" scheme="https://i.notesai.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
     
     
-      <category term="golang" scheme="https://notesail.com/tags/golang/"/>
+      <category term="golang" scheme="https://i.notesai.com/tags/golang/"/>
     
-      <category term="telegram" scheme="https://notesail.com/tags/telegram/"/>
+      <category term="telegram" scheme="https://i.notesai.com/tags/telegram/"/>
     
   </entry>
   
   <entry>
     <title>菜鸟论坛后端开发记录(二)</title>
-    <link href="https://notesail.com/posts/noob-bbs-server-2.html"/>
-    <id>https://notesail.com/posts/noob-bbs-server-2.html</id>
+    <link href="https://i.notesai.com/posts/noob-bbs-server-2.html"/>
+    <id>https://i.notesai.com/posts/noob-bbs-server-2.html</id>
     <published>2020-06-18T10:19:38.000Z</published>
     <updated>2020-08-30T15:31:46.000Z</updated>
     
@@ -55,23 +55,23 @@
     </summary>
     
     
-      <category term="技术" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://i.notesai.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="实践" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
+      <category term="实践" scheme="https://i.notesai.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
     
     
-      <category term="java" scheme="https://notesail.com/tags/java/"/>
+      <category term="java" scheme="https://i.notesai.com/tags/java/"/>
     
-      <category term="专业实训" scheme="https://notesail.com/tags/%E4%B8%93%E4%B8%9A%E5%AE%9E%E8%AE%AD/"/>
+      <category term="专业实训" scheme="https://i.notesai.com/tags/%E4%B8%93%E4%B8%9A%E5%AE%9E%E8%AE%AD/"/>
     
-      <category term="shiro" scheme="https://notesail.com/tags/shiro/"/>
+      <category term="shiro" scheme="https://i.notesai.com/tags/shiro/"/>
     
   </entry>
   
   <entry>
     <title>菜鸟论坛后端开发记录(一)</title>
-    <link href="https://notesail.com/posts/noob-bbs-server-1.html"/>
-    <id>https://notesail.com/posts/noob-bbs-server-1.html</id>
+    <link href="https://i.notesai.com/posts/noob-bbs-server-1.html"/>
+    <id>https://i.notesai.com/posts/noob-bbs-server-1.html</id>
     <published>2020-06-17T03:32:16.000Z</published>
     <updated>2020-08-30T15:31:46.000Z</updated>
     
@@ -82,25 +82,25 @@
     </summary>
     
     
-      <category term="技术" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://i.notesai.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="实践" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
+      <category term="实践" scheme="https://i.notesai.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
     
     
-      <category term="java" scheme="https://notesail.com/tags/java/"/>
+      <category term="java" scheme="https://i.notesai.com/tags/java/"/>
     
-      <category term="jpa" scheme="https://notesail.com/tags/jpa/"/>
+      <category term="jpa" scheme="https://i.notesai.com/tags/jpa/"/>
     
-      <category term="spring boot" scheme="https://notesail.com/tags/spring-boot/"/>
+      <category term="spring boot" scheme="https://i.notesai.com/tags/spring-boot/"/>
     
-      <category term="专业实训" scheme="https://notesail.com/tags/%E4%B8%93%E4%B8%9A%E5%AE%9E%E8%AE%AD/"/>
+      <category term="专业实训" scheme="https://i.notesai.com/tags/%E4%B8%93%E4%B8%9A%E5%AE%9E%E8%AE%AD/"/>
     
   </entry>
   
   <entry>
     <title>docker中无法使用systemctl</title>
-    <link href="https://notesail.com/posts/docker-systemctl.html"/>
-    <id>https://notesail.com/posts/docker-systemctl.html</id>
+    <link href="https://i.notesai.com/posts/docker-systemctl.html"/>
+    <id>https://i.notesai.com/posts/docker-systemctl.html</id>
     <published>2020-06-16T17:06:51.000Z</published>
     <updated>2020-08-30T15:31:46.000Z</updated>
     
@@ -111,19 +111,19 @@
     </summary>
     
     
-      <category term="技术" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://i.notesai.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="实践" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
+      <category term="实践" scheme="https://i.notesai.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
     
     
-      <category term="docker" scheme="https://notesail.com/tags/docker/"/>
+      <category term="docker" scheme="https://i.notesai.com/tags/docker/"/>
     
   </entry>
   
   <entry>
     <title>docker与wine环境配置</title>
-    <link href="https://notesail.com/posts/docker-wine-env.html"/>
-    <id>https://notesail.com/posts/docker-wine-env.html</id>
+    <link href="https://i.notesai.com/posts/docker-wine-env.html"/>
+    <id>https://i.notesai.com/posts/docker-wine-env.html</id>
     <published>2020-05-31T07:01:34.000Z</published>
     <updated>2020-08-30T15:31:11.000Z</updated>
     
@@ -134,21 +134,21 @@
     </summary>
     
     
-      <category term="杂谈" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/"/>
+      <category term="杂谈" scheme="https://i.notesai.com/categories/%E6%9D%82%E8%B0%88/"/>
     
-      <category term="折腾" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/%E6%8A%98%E8%85%BE/"/>
+      <category term="折腾" scheme="https://i.notesai.com/categories/%E6%9D%82%E8%B0%88/%E6%8A%98%E8%85%BE/"/>
     
     
-      <category term="docker" scheme="https://notesail.com/tags/docker/"/>
+      <category term="docker" scheme="https://i.notesai.com/tags/docker/"/>
     
-      <category term="wine" scheme="https://notesail.com/tags/wine/"/>
+      <category term="wine" scheme="https://i.notesai.com/tags/wine/"/>
     
   </entry>
   
   <entry>
     <title>一台电脑多个hexo站点的配置</title>
-    <link href="https://notesail.com/posts/hexo-multi-sites.html"/>
-    <id>https://notesail.com/posts/hexo-multi-sites.html</id>
+    <link href="https://i.notesai.com/posts/hexo-multi-sites.html"/>
+    <id>https://i.notesai.com/posts/hexo-multi-sites.html</id>
     <published>2020-05-07T05:02:35.000Z</published>
     <updated>2020-08-30T15:31:11.000Z</updated>
     
@@ -163,21 +163,21 @@
     </summary>
     
     
-      <category term="技术" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://i.notesai.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="实践" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
+      <category term="实践" scheme="https://i.notesai.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
     
     
-      <category term="hexo" scheme="https://notesail.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://i.notesai.com/tags/hexo/"/>
     
-      <category term="git" scheme="https://notesail.com/tags/git/"/>
+      <category term="git" scheme="https://i.notesai.com/tags/git/"/>
     
   </entry>
   
   <entry>
     <title>hexo使用valine评论并支持邮件通知</title>
-    <link href="https://notesail.com/posts/valine-admin.html"/>
-    <id>https://notesail.com/posts/valine-admin.html</id>
+    <link href="https://i.notesai.com/posts/valine-admin.html"/>
+    <id>https://i.notesai.com/posts/valine-admin.html</id>
     <published>2020-04-16T12:01:56.000Z</published>
     <updated>2020-08-30T15:31:11.000Z</updated>
     
@@ -188,21 +188,21 @@
     </summary>
     
     
-      <category term="杂谈" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/"/>
+      <category term="杂谈" scheme="https://i.notesai.com/categories/%E6%9D%82%E8%B0%88/"/>
     
-      <category term="分享" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/%E5%88%86%E4%BA%AB/"/>
+      <category term="分享" scheme="https://i.notesai.com/categories/%E6%9D%82%E8%B0%88/%E5%88%86%E4%BA%AB/"/>
     
     
-      <category term="建站" scheme="https://notesail.com/tags/%E5%BB%BA%E7%AB%99/"/>
+      <category term="建站" scheme="https://i.notesai.com/tags/%E5%BB%BA%E7%AB%99/"/>
     
-      <category term="博客" scheme="https://notesail.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="博客" scheme="https://i.notesai.com/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
   <entry>
     <title>nginx访问日志记录cloudflare后真实ip</title>
-    <link href="https://notesail.com/posts/cloudflare-realip.html"/>
-    <id>https://notesail.com/posts/cloudflare-realip.html</id>
+    <link href="https://i.notesai.com/posts/cloudflare-realip.html"/>
+    <id>https://i.notesai.com/posts/cloudflare-realip.html</id>
     <published>2020-04-11T16:11:37.000Z</published>
     <updated>2020-08-30T15:31:11.000Z</updated>
     
@@ -213,21 +213,21 @@
     </summary>
     
     
-      <category term="技术" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://i.notesai.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="实践" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
+      <category term="实践" scheme="https://i.notesai.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
     
     
-      <category term="建站" scheme="https://notesail.com/tags/%E5%BB%BA%E7%AB%99/"/>
+      <category term="建站" scheme="https://i.notesai.com/tags/%E5%BB%BA%E7%AB%99/"/>
     
-      <category term="nginx" scheme="https://notesail.com/tags/nginx/"/>
+      <category term="nginx" scheme="https://i.notesai.com/tags/nginx/"/>
     
   </entry>
   
   <entry>
     <title>Linux下管理Windows</title>
-    <link href="https://notesail.com/posts/linux-manage-windows.html"/>
-    <id>https://notesail.com/posts/linux-manage-windows.html</id>
+    <link href="https://i.notesai.com/posts/linux-manage-windows.html"/>
+    <id>https://i.notesai.com/posts/linux-manage-windows.html</id>
     <published>2020-04-07T03:55:50.000Z</published>
     <updated>2020-08-30T15:31:46.000Z</updated>
     
@@ -242,21 +242,21 @@
     </summary>
     
     
-      <category term="杂谈" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/"/>
+      <category term="杂谈" scheme="https://i.notesai.com/categories/%E6%9D%82%E8%B0%88/"/>
     
-      <category term="折腾" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/%E6%8A%98%E8%85%BE/"/>
+      <category term="折腾" scheme="https://i.notesai.com/categories/%E6%9D%82%E8%B0%88/%E6%8A%98%E8%85%BE/"/>
     
     
-      <category term="windows" scheme="https://notesail.com/tags/windows/"/>
+      <category term="windows" scheme="https://i.notesai.com/tags/windows/"/>
     
-      <category term="虚拟机" scheme="https://notesail.com/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+      <category term="虚拟机" scheme="https://i.notesai.com/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
     
   </entry>
   
   <entry>
     <title>kvm单网卡桥接模式</title>
-    <link href="https://notesail.com/posts/kvm-bridge.html"/>
-    <id>https://notesail.com/posts/kvm-bridge.html</id>
+    <link href="https://i.notesai.com/posts/kvm-bridge.html"/>
+    <id>https://i.notesai.com/posts/kvm-bridge.html</id>
     <published>2020-04-07T02:45:33.000Z</published>
     <updated>2020-08-30T15:31:46.000Z</updated>
     
@@ -267,23 +267,23 @@
     </summary>
     
     
-      <category term="杂谈" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/"/>
+      <category term="杂谈" scheme="https://i.notesai.com/categories/%E6%9D%82%E8%B0%88/"/>
     
-      <category term="折腾" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/%E6%8A%98%E8%85%BE/"/>
+      <category term="折腾" scheme="https://i.notesai.com/categories/%E6%9D%82%E8%B0%88/%E6%8A%98%E8%85%BE/"/>
     
     
-      <category term="虚拟机" scheme="https://notesail.com/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+      <category term="虚拟机" scheme="https://i.notesai.com/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
     
-      <category term="kvm" scheme="https://notesail.com/tags/kvm/"/>
+      <category term="kvm" scheme="https://i.notesai.com/tags/kvm/"/>
     
-      <category term="网络" scheme="https://notesail.com/tags/%E7%BD%91%E7%BB%9C/"/>
+      <category term="网络" scheme="https://i.notesai.com/tags/%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   
   <entry>
     <title>在Linux上运行bdx(BedrockX)开设基岩版MC插件服</title>
-    <link href="https://notesail.com/posts/linux-bedrockx.html"/>
-    <id>https://notesail.com/posts/linux-bedrockx.html</id>
+    <link href="https://i.notesai.com/posts/linux-bedrockx.html"/>
+    <id>https://i.notesai.com/posts/linux-bedrockx.html</id>
     <published>2020-04-04T10:18:15.000Z</published>
     <updated>2020-08-30T15:31:11.000Z</updated>
     
@@ -294,21 +294,21 @@
     </summary>
     
     
-      <category term="杂谈" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/"/>
+      <category term="杂谈" scheme="https://i.notesai.com/categories/%E6%9D%82%E8%B0%88/"/>
     
-      <category term="分享" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/%E5%88%86%E4%BA%AB/"/>
+      <category term="分享" scheme="https://i.notesai.com/categories/%E6%9D%82%E8%B0%88/%E5%88%86%E4%BA%AB/"/>
     
     
-      <category term="Minecraft" scheme="https://notesail.com/tags/Minecraft/"/>
+      <category term="Minecraft" scheme="https://i.notesai.com/tags/Minecraft/"/>
     
-      <category term="Minecraft服务器" scheme="https://notesail.com/tags/Minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+      <category term="Minecraft服务器" scheme="https://i.notesai.com/tags/Minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
   </entry>
   
   <entry>
     <title>使用Chevereto自建图床</title>
-    <link href="https://notesail.com/posts/chevereto-imgbed.html"/>
-    <id>https://notesail.com/posts/chevereto-imgbed.html</id>
+    <link href="https://i.notesai.com/posts/chevereto-imgbed.html"/>
+    <id>https://i.notesai.com/posts/chevereto-imgbed.html</id>
     <published>2020-03-19T06:48:33.000Z</published>
     <updated>2020-08-30T15:31:11.000Z</updated>
     
@@ -319,19 +319,19 @@
     </summary>
     
     
-      <category term="杂谈" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/"/>
+      <category term="杂谈" scheme="https://i.notesai.com/categories/%E6%9D%82%E8%B0%88/"/>
     
-      <category term="分享" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/%E5%88%86%E4%BA%AB/"/>
+      <category term="分享" scheme="https://i.notesai.com/categories/%E6%9D%82%E8%B0%88/%E5%88%86%E4%BA%AB/"/>
     
     
-      <category term="建站" scheme="https://notesail.com/tags/%E5%BB%BA%E7%AB%99/"/>
+      <category term="建站" scheme="https://i.notesai.com/tags/%E5%BB%BA%E7%AB%99/"/>
     
   </entry>
   
   <entry>
     <title>ubuntu手动安装lnmp+Typecho</title>
-    <link href="https://notesail.com/posts/setup-typecho.html"/>
-    <id>https://notesail.com/posts/setup-typecho.html</id>
+    <link href="https://i.notesai.com/posts/setup-typecho.html"/>
+    <id>https://i.notesai.com/posts/setup-typecho.html</id>
     <published>2020-03-19T03:19:03.000Z</published>
     <updated>2020-08-30T15:31:11.000Z</updated>
     
@@ -342,21 +342,21 @@
     </summary>
     
     
-      <category term="杂谈" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/"/>
+      <category term="杂谈" scheme="https://i.notesai.com/categories/%E6%9D%82%E8%B0%88/"/>
     
-      <category term="分享" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/%E5%88%86%E4%BA%AB/"/>
+      <category term="分享" scheme="https://i.notesai.com/categories/%E6%9D%82%E8%B0%88/%E5%88%86%E4%BA%AB/"/>
     
     
-      <category term="建站" scheme="https://notesail.com/tags/%E5%BB%BA%E7%AB%99/"/>
+      <category term="建站" scheme="https://i.notesai.com/tags/%E5%BB%BA%E7%AB%99/"/>
     
-      <category term="typecho" scheme="https://notesail.com/tags/typecho/"/>
+      <category term="typecho" scheme="https://i.notesai.com/tags/typecho/"/>
     
   </entry>
   
   <entry>
     <title>cloudflare自定义节点 加速访问</title>
-    <link href="https://notesail.com/posts/cloudflare-custom.html"/>
-    <id>https://notesail.com/posts/cloudflare-custom.html</id>
+    <link href="https://i.notesai.com/posts/cloudflare-custom.html"/>
+    <id>https://i.notesai.com/posts/cloudflare-custom.html</id>
     <published>2020-03-16T07:07:30.000Z</published>
     <updated>2020-08-30T15:31:46.000Z</updated>
     
@@ -367,23 +367,23 @@
     </summary>
     
     
-      <category term="杂谈" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/"/>
+      <category term="杂谈" scheme="https://i.notesai.com/categories/%E6%9D%82%E8%B0%88/"/>
     
-      <category term="分享" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/%E5%88%86%E4%BA%AB/"/>
+      <category term="分享" scheme="https://i.notesai.com/categories/%E6%9D%82%E8%B0%88/%E5%88%86%E4%BA%AB/"/>
     
     
-      <category term="建站" scheme="https://notesail.com/tags/%E5%BB%BA%E7%AB%99/"/>
+      <category term="建站" scheme="https://i.notesai.com/tags/%E5%BB%BA%E7%AB%99/"/>
     
-      <category term="分享" scheme="https://notesail.com/tags/%E5%88%86%E4%BA%AB/"/>
+      <category term="分享" scheme="https://i.notesai.com/tags/%E5%88%86%E4%BA%AB/"/>
     
-      <category term="cdn" scheme="https://notesail.com/tags/cdn/"/>
+      <category term="cdn" scheme="https://i.notesai.com/tags/cdn/"/>
     
   </entry>
   
   <entry>
     <title>hexo部署到coding page以及zeit.co</title>
-    <link href="https://notesail.com/posts/hexo-deploy-pages.html"/>
-    <id>https://notesail.com/posts/hexo-deploy-pages.html</id>
+    <link href="https://i.notesai.com/posts/hexo-deploy-pages.html"/>
+    <id>https://i.notesai.com/posts/hexo-deploy-pages.html</id>
     <published>2020-03-13T05:47:17.000Z</published>
     <updated>2020-08-30T15:31:11.000Z</updated>
     
@@ -411,21 +411,21 @@
     </summary>
     
     
-      <category term="杂谈" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/"/>
+      <category term="杂谈" scheme="https://i.notesai.com/categories/%E6%9D%82%E8%B0%88/"/>
     
-      <category term="分享" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/%E5%88%86%E4%BA%AB/"/>
+      <category term="分享" scheme="https://i.notesai.com/categories/%E6%9D%82%E8%B0%88/%E5%88%86%E4%BA%AB/"/>
     
     
-      <category term="建站" scheme="https://notesail.com/tags/%E5%BB%BA%E7%AB%99/"/>
+      <category term="建站" scheme="https://i.notesai.com/tags/%E5%BB%BA%E7%AB%99/"/>
     
-      <category term="hexo" scheme="https://notesail.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://i.notesai.com/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>code-server打造web代码编辑环境</title>
-    <link href="https://notesail.com/posts/code-server.html"/>
-    <id>https://notesail.com/posts/code-server.html</id>
+    <link href="https://i.notesai.com/posts/code-server.html"/>
+    <id>https://i.notesai.com/posts/code-server.html</id>
     <published>2020-03-12T05:53:03.000Z</published>
     <updated>2020-08-30T15:31:11.000Z</updated>
     
@@ -436,21 +436,21 @@
     </summary>
     
     
-      <category term="杂谈" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/"/>
+      <category term="杂谈" scheme="https://i.notesai.com/categories/%E6%9D%82%E8%B0%88/"/>
     
-      <category term="折腾" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/%E6%8A%98%E8%85%BE/"/>
+      <category term="折腾" scheme="https://i.notesai.com/categories/%E6%9D%82%E8%B0%88/%E6%8A%98%E8%85%BE/"/>
     
     
-      <category term="折腾" scheme="https://notesail.com/tags/%E6%8A%98%E8%85%BE/"/>
+      <category term="折腾" scheme="https://i.notesai.com/tags/%E6%8A%98%E8%85%BE/"/>
     
-      <category term="docker" scheme="https://notesail.com/tags/docker/"/>
+      <category term="docker" scheme="https://i.notesai.com/tags/docker/"/>
     
   </entry>
   
   <entry>
     <title>安卓使用metasploit</title>
-    <link href="https://notesail.com/posts/android-metasploit.html"/>
-    <id>https://notesail.com/posts/android-metasploit.html</id>
+    <link href="https://i.notesai.com/posts/android-metasploit.html"/>
+    <id>https://i.notesai.com/posts/android-metasploit.html</id>
     <published>2020-03-12T05:45:08.000Z</published>
     <updated>2020-05-07T04:02:01.000Z</updated>
     
@@ -461,21 +461,21 @@
     </summary>
     
     
-      <category term="杂谈" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/"/>
+      <category term="杂谈" scheme="https://i.notesai.com/categories/%E6%9D%82%E8%B0%88/"/>
     
-      <category term="折腾" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/%E6%8A%98%E8%85%BE/"/>
+      <category term="折腾" scheme="https://i.notesai.com/categories/%E6%9D%82%E8%B0%88/%E6%8A%98%E8%85%BE/"/>
     
     
-      <category term="折腾" scheme="https://notesail.com/tags/%E6%8A%98%E8%85%BE/"/>
+      <category term="折腾" scheme="https://i.notesai.com/tags/%E6%8A%98%E8%85%BE/"/>
     
-      <category term="metasploit" scheme="https://notesail.com/tags/metasploit/"/>
+      <category term="metasploit" scheme="https://i.notesai.com/tags/metasploit/"/>
     
   </entry>
   
   <entry>
     <title>如何使用bdl插件</title>
-    <link href="https://notesail.com/posts/bdl-plugins-guide.html"/>
-    <id>https://notesail.com/posts/bdl-plugins-guide.html</id>
+    <link href="https://i.notesai.com/posts/bdl-plugins-guide.html"/>
+    <id>https://i.notesai.com/posts/bdl-plugins-guide.html</id>
     <published>2020-03-12T04:53:14.000Z</published>
     <updated>2020-08-30T15:31:11.000Z</updated>
     
@@ -486,21 +486,21 @@
     </summary>
     
     
-      <category term="杂谈" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/"/>
+      <category term="杂谈" scheme="https://i.notesai.com/categories/%E6%9D%82%E8%B0%88/"/>
     
-      <category term="分享" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/%E5%88%86%E4%BA%AB/"/>
+      <category term="分享" scheme="https://i.notesai.com/categories/%E6%9D%82%E8%B0%88/%E5%88%86%E4%BA%AB/"/>
     
     
-      <category term="Minecraft" scheme="https://notesail.com/tags/Minecraft/"/>
+      <category term="Minecraft" scheme="https://i.notesai.com/tags/Minecraft/"/>
     
-      <category term="Minecraft服务器" scheme="https://notesail.com/tags/Minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+      <category term="Minecraft服务器" scheme="https://i.notesai.com/tags/Minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
   </entry>
   
   <entry>
     <title>Minecraft基岩版服务器(bds)怎么添加行为包材质包</title>
-    <link href="https://notesail.com/posts/bds-packs-add.html"/>
-    <id>https://notesail.com/posts/bds-packs-add.html</id>
+    <link href="https://i.notesai.com/posts/bds-packs-add.html"/>
+    <id>https://i.notesai.com/posts/bds-packs-add.html</id>
     <published>2020-03-12T04:50:28.000Z</published>
     <updated>2020-08-30T15:31:11.000Z</updated>
     
@@ -511,21 +511,21 @@
     </summary>
     
     
-      <category term="杂谈" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/"/>
+      <category term="杂谈" scheme="https://i.notesai.com/categories/%E6%9D%82%E8%B0%88/"/>
     
-      <category term="折腾" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/%E6%8A%98%E8%85%BE/"/>
+      <category term="折腾" scheme="https://i.notesai.com/categories/%E6%9D%82%E8%B0%88/%E6%8A%98%E8%85%BE/"/>
     
     
-      <category term="Minecraft" scheme="https://notesail.com/tags/Minecraft/"/>
+      <category term="Minecraft" scheme="https://i.notesai.com/tags/Minecraft/"/>
     
-      <category term="Minecraft服务器" scheme="https://notesail.com/tags/Minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+      <category term="Minecraft服务器" scheme="https://i.notesai.com/tags/Minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
   </entry>
   
   <entry>
     <title>Hello Hexo</title>
-    <link href="https://notesail.com/posts/hello-hexo.html"/>
-    <id>https://notesail.com/posts/hello-hexo.html</id>
+    <link href="https://i.notesai.com/posts/hello-hexo.html"/>
+    <id>https://i.notesai.com/posts/hello-hexo.html</id>
     <published>2020-03-12T04:27:29.000Z</published>
     <updated>2020-08-30T15:31:11.000Z</updated>
     
@@ -541,8 +541,8 @@
   
   <entry>
     <title>docker图片中文显示乱码/显示方块解决方法</title>
-    <link href="https://notesail.com/posts/docker-chinese-support.html"/>
-    <id>https://notesail.com/posts/docker-chinese-support.html</id>
+    <link href="https://i.notesai.com/posts/docker-chinese-support.html"/>
+    <id>https://i.notesai.com/posts/docker-chinese-support.html</id>
     <published>2020-03-12T04:27:29.000Z</published>
     <updated>2020-08-30T15:31:11.000Z</updated>
     
@@ -553,21 +553,21 @@
     </summary>
     
     
-      <category term="技术" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://i.notesai.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="实践" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
+      <category term="实践" scheme="https://i.notesai.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
     
     
-      <category term="docker" scheme="https://notesail.com/tags/docker/"/>
+      <category term="docker" scheme="https://i.notesai.com/tags/docker/"/>
     
-      <category term="bugs" scheme="https://notesail.com/tags/bugs/"/>
+      <category term="bugs" scheme="https://i.notesai.com/tags/bugs/"/>
     
   </entry>
   
   <entry>
     <title>使用Babylon.js在网页上显示glb模型</title>
-    <link href="https://notesail.com/posts/babylon-glb.html"/>
-    <id>https://notesail.com/posts/babylon-glb.html</id>
+    <link href="https://i.notesai.com/posts/babylon-glb.html"/>
+    <id>https://i.notesai.com/posts/babylon-glb.html</id>
     <published>2020-03-12T04:22:38.000Z</published>
     <updated>2020-08-30T15:31:11.000Z</updated>
     
@@ -582,21 +582,21 @@
     </summary>
     
     
-      <category term="技术" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://i.notesai.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="实践" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
+      <category term="实践" scheme="https://i.notesai.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
     
     
-      <category term="javascript" scheme="https://notesail.com/tags/javascript/"/>
+      <category term="javascript" scheme="https://i.notesai.com/tags/javascript/"/>
     
-      <category term="前端" scheme="https://notesail.com/tags/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="https://i.notesai.com/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
   <entry>
     <title>微信小程序使用npm模块</title>
-    <link href="https://notesail.com/posts/wechatapp-npm.html"/>
-    <id>https://notesail.com/posts/wechatapp-npm.html</id>
+    <link href="https://i.notesai.com/posts/wechatapp-npm.html"/>
+    <id>https://i.notesai.com/posts/wechatapp-npm.html</id>
     <published>2020-03-12T04:20:26.000Z</published>
     <updated>2020-08-30T15:31:11.000Z</updated>
     
@@ -607,23 +607,23 @@
     </summary>
     
     
-      <category term="技术" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://i.notesai.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="实践" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
+      <category term="实践" scheme="https://i.notesai.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
     
     
-      <category term="编程" scheme="https://notesail.com/tags/%E7%BC%96%E7%A8%8B/"/>
+      <category term="编程" scheme="https://i.notesai.com/tags/%E7%BC%96%E7%A8%8B/"/>
     
-      <category term="nodejs" scheme="https://notesail.com/tags/nodejs/"/>
+      <category term="nodejs" scheme="https://i.notesai.com/tags/nodejs/"/>
     
-      <category term="微信小程序" scheme="https://notesail.com/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+      <category term="微信小程序" scheme="https://i.notesai.com/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
   </entry>
   
   <entry>
     <title>wordpress使用自定义字体</title>
-    <link href="https://notesail.com/posts/wordpress-custom-font.html"/>
-    <id>https://notesail.com/posts/wordpress-custom-font.html</id>
+    <link href="https://i.notesai.com/posts/wordpress-custom-font.html"/>
+    <id>https://i.notesai.com/posts/wordpress-custom-font.html</id>
     <published>2020-03-12T04:14:59.000Z</published>
     <updated>2020-08-30T15:31:11.000Z</updated>
     
@@ -635,21 +635,21 @@
     </summary>
     
     
-      <category term="杂谈" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/"/>
+      <category term="杂谈" scheme="https://i.notesai.com/categories/%E6%9D%82%E8%B0%88/"/>
     
-      <category term="折腾" scheme="https://notesail.com/categories/%E6%9D%82%E8%B0%88/%E6%8A%98%E8%85%BE/"/>
+      <category term="折腾" scheme="https://i.notesai.com/categories/%E6%9D%82%E8%B0%88/%E6%8A%98%E8%85%BE/"/>
     
     
-      <category term="wordpress" scheme="https://notesail.com/tags/wordpress/"/>
+      <category term="wordpress" scheme="https://i.notesai.com/tags/wordpress/"/>
     
-      <category term="技巧" scheme="https://notesail.com/tags/%E6%8A%80%E5%B7%A7/"/>
+      <category term="技巧" scheme="https://i.notesai.com/tags/%E6%8A%80%E5%B7%A7/"/>
     
   </entry>
   
   <entry>
     <title>Minecraft Websocket 服务器</title>
-    <link href="https://notesail.com/posts/minecraft-websocket.html"/>
-    <id>https://notesail.com/posts/minecraft-websocket.html</id>
+    <link href="https://i.notesai.com/posts/minecraft-websocket.html"/>
+    <id>https://i.notesai.com/posts/minecraft-websocket.html</id>
     <published>2020-03-12T04:03:51.000Z</published>
     <updated>2020-08-30T15:31:46.000Z</updated>
     
@@ -662,23 +662,23 @@
     </summary>
     
     
-      <category term="技术" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://i.notesai.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="实践" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
+      <category term="实践" scheme="https://i.notesai.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
     
     
-      <category term="Minecraft" scheme="https://notesail.com/tags/Minecraft/"/>
+      <category term="Minecraft" scheme="https://i.notesai.com/tags/Minecraft/"/>
     
-      <category term="编程" scheme="https://notesail.com/tags/%E7%BC%96%E7%A8%8B/"/>
+      <category term="编程" scheme="https://i.notesai.com/tags/%E7%BC%96%E7%A8%8B/"/>
     
-      <category term="nodejs" scheme="https://notesail.com/tags/nodejs/"/>
+      <category term="nodejs" scheme="https://i.notesai.com/tags/nodejs/"/>
     
   </entry>
   
   <entry>
     <title>macvlan模式容器与宿主机通信</title>
-    <link href="https://notesail.com/posts/macvlan-host.html"/>
-    <id>https://notesail.com/posts/macvlan-host.html</id>
+    <link href="https://i.notesai.com/posts/macvlan-host.html"/>
+    <id>https://i.notesai.com/posts/macvlan-host.html</id>
     <published>2020-03-11T01:56:51.000Z</published>
     <updated>2020-08-30T15:31:11.000Z</updated>
     
@@ -689,21 +689,21 @@
     </summary>
     
     
-      <category term="技术" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://i.notesai.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="实践" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
+      <category term="实践" scheme="https://i.notesai.com/categories/%E6%8A%80%E6%9C%AF/%E5%AE%9E%E8%B7%B5/"/>
     
     
-      <category term="docker" scheme="https://notesail.com/tags/docker/"/>
+      <category term="docker" scheme="https://i.notesai.com/tags/docker/"/>
     
-      <category term="docker网络" scheme="https://notesail.com/tags/docker%E7%BD%91%E7%BB%9C/"/>
+      <category term="docker网络" scheme="https://i.notesai.com/tags/docker%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   
   <entry>
     <title>nodejs学习记录</title>
-    <link href="https://notesail.com/posts/study-nodejs.html"/>
-    <id>https://notesail.com/posts/study-nodejs.html</id>
+    <link href="https://i.notesai.com/posts/study-nodejs.html"/>
+    <id>https://i.notesai.com/posts/study-nodejs.html</id>
     <published>2020-03-10T14:37:10.000Z</published>
     <updated>2020-08-30T15:31:46.000Z</updated>
     
@@ -722,14 +722,14 @@
     </summary>
     
     
-      <category term="技术" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://i.notesai.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="学习" scheme="https://notesail.com/categories/%E6%8A%80%E6%9C%AF/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="https://i.notesai.com/categories/%E6%8A%80%E6%9C%AF/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="nodejs" scheme="https://notesail.com/tags/nodejs/"/>
+      <category term="nodejs" scheme="https://i.notesai.com/tags/nodejs/"/>
     
-      <category term="编程学习" scheme="https://notesail.com/tags/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+      <category term="编程学习" scheme="https://i.notesai.com/tags/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
